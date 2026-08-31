@@ -1,0 +1,3 @@
+# build-time only; not part of the deployed site
+tools/
+.claude/
