@@ -188,16 +188,28 @@ COVERS = {
     "curam": dict(
         defs=lin("g", 160, [(0, "#d7c4a8"), (.46, "#7f9b8a"), (1, "#2d4a40")]),
         art='<rect width="1200" height="630" fill="url(#g)"/>'),
+    "eden": dict(
+        defs=lin("g", 150, [(0, "#0d2a2c"), (.55, "#0a1a1f"), (1, "#142e3a")])
+        + rad("h", .30, .68, .34, "#5ee0c4", .28),
+        art='<rect width="1200" height="630" fill="url(#g)"/>'
+            '<rect width="1200" height="630" fill="url(#h)"/>'
+            '<circle cx="372" cy="260" r="112" fill="none" stroke="#e8e0d2" '
+            'stroke-opacity=".3" stroke-width="1"/>'
+            '<circle cx="372" cy="260" r="144" fill="none" stroke="#5ee0c4" '
+            'stroke-opacity=".08" stroke-width="16"/>'
+            '<circle cx="372" cy="260" r="176" fill="none" stroke="#5ee0c4" '
+            'stroke-opacity=".05" stroke-width="16"/>'),
 }
 
 
-def case_card(slug, num, name, word):
+def case_card(slug, num, name, word, kicker=None):
     """A project card: cover art, then one scrimmed text band along the bottom.
 
     The scrim is what makes this work on every cover. Curam's gradient runs
     light-to-dark, so without it the title sat dark-on-dark and disappeared.
     """
     c = COVERS[slug]
+    kicker_text = kicker or f"{num} · SELECTED WORK · SHOGHI BAGUL"
     return wrap(f'''<defs>{c["defs"]}
 <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0" stop-color="#171512" stop-opacity="0"/>
@@ -206,7 +218,7 @@ def case_card(slug, num, name, word):
 {c["art"]}
 <rect x="0" y="315" width="1200" height="315" fill="url(#scrim)"/>
 <text x="80" y="470" font-family="{MONO}" font-size="20" letter-spacing="2" \
-fill="{PAPER2}" fill-opacity=".82">{num} · SELECTED WORK · SHOGHI BAGUL</text>
+fill="{PAPER2}" fill-opacity=".82">{kicker_text}</text>
 <text x="80" y="556" font-family="{SERIF}" font-size="101" \
 fill="{PAPER2}">{esc(name)}</text>
 <text x="1120" y="556" text-anchor="end" font-family="{SERIF}" font-style="italic" \
@@ -243,7 +255,7 @@ fill="{INK2}">{esc(meta)}</text>''')
 CARDS = [
     ("home", "png", paper_card(
         [("Shoghi", 130, False), ("Bagul", 130, True)],
-        "AVAILABLE FOR NEW ROLES",
+        "PRODUCT DESIGNER · AHMEDABAD",
         "Product designer · Design Lead, Tcules · Ahmedabad")),
     ("about", "png", paper_card(
         [([("Design", ACCENT), ("er by craft.", INK)], 84, False),
@@ -255,7 +267,8 @@ CARDS = [
     ("delicut", "jpg", case_card("delicut", "03", "Delicut", "Nourish")),
     ("pubadmin", "jpg", case_card("pubadmin", "04", "PubAdmin", "Rights")),
     ("novus", "jpg", case_card("novus", "05", "Novus Insights", "Insight")),
-    ("curam", "jpg", case_card("curam", "06", "Curam Care", "Care")),
+    ("eden", "jpg", case_card("eden", "06", "Eden AI", "Search")),
+    ("curam", "jpg", case_card("curam", "06", "Curam Care", "Care", kicker="ALSO · SHOGHI BAGUL")),
 ]
 
 
