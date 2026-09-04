@@ -140,7 +140,7 @@ def wrap(inner):
 
 # Project cover art, transcribed from the .cover--* rules in css/styles.css.
 COVERS = {
-    "quixera": dict(
+    "sports-ecosystem": dict(
         defs=lin("g", 160, [(0, "#173528"), (.55, "#0d2118"), (1, "#2a4a1d")])
         + rad("h", .18, .20, .34, "#ffdc8c", .28),
         art='<rect width="1200" height="630" fill="url(#g)"/>'
@@ -162,14 +162,14 @@ COVERS = {
             'stroke-opacity=".35" stroke-width="1"/>'
             '<circle cx="396" cy="245" r="139" fill="none" stroke="#c23a17" '
             'stroke-opacity=".12" stroke-width="18"/>'),
-    "delicut": dict(
+    "meal-subscription": dict(
         defs=lin("g", 200, [(0, "#c75a24"), (.70, "#8d2d16"), (1, "#24110c")])
         + rad("h", .80, .20, .38, "#ffc45c", .45),
         art='<rect width="1200" height="630" fill="url(#g)"/>'
             '<rect width="1200" height="630" fill="url(#h)"/>'
             '<circle cx="420" cy="277" r="138" fill="#f3ece0" fill-opacity=".14" '
             'stroke="#f3ece0" stroke-opacity=".28"/>'),
-    "pubadmin": dict(
+    "rights-management": dict(
         defs=lin("g", 180, [(0, "#1a2744"), (1, "#0e1526")]),
         art='<rect width="1200" height="630" fill="url(#g)"/>'
             '<line x1="144" y1="101" x2="1056" y2="101" stroke="#e8e0d2" '
@@ -185,7 +185,7 @@ COVERS = {
             '<rect width="1200" height="630" fill="url(#h)"/>'
             '<polygon points="120,489 236,414 336,451 449,359 562,439 675,340 '
             '750,410 750,489" fill="#e8e0d2" fill-opacity=".16"/>'),
-    "curam": dict(
+    "caregiver-marketplace": dict(
         defs=lin("g", 160, [(0, "#d7c4a8"), (.46, "#7f9b8a"), (1, "#2d4a40")]),
         art='<rect width="1200" height="630" fill="url(#g)"/>'),
     "eden": dict(
@@ -205,8 +205,8 @@ COVERS = {
 def case_card(slug, num, name, word, kicker=None):
     """A project card: cover art, then one scrimmed text band along the bottom.
 
-    The scrim is what makes this work on every cover. Curam's gradient runs
-    light-to-dark, so without it the title sat dark-on-dark and disappeared.
+    The scrim is what makes this work on every cover. The caregiver-marketplace
+    gradient runs light-to-dark, so without it the title sat dark-on-dark and disappeared.
     """
     c = COVERS[slug]
     kicker_text = kicker or f"{num} · SELECTED WORK · SHOGHI BAGUL"
@@ -262,13 +262,13 @@ CARDS = [
          ([("Engineer", ACCENT), (" by training.", INK)], 84, False)],
         "ABOUT · SHOGHI BAGUL",
         "M.Des, NID Ahmedabad · Design Lead, Tcules")),
-    ("quixera", "jpg", case_card("quixera", "01", "Quixera", "Play")),
+    ("sports-ecosystem", "jpg", case_card("sports-ecosystem", "01", "Ecosystem", "Play")),
     ("connectx", "jpg", case_card("connectx", "02", "ConnectX", "Signal")),
-    ("delicut", "jpg", case_card("delicut", "03", "Delicut", "Nourish")),
-    ("pubadmin", "jpg", case_card("pubadmin", "04", "PubAdmin", "Rights")),
+    ("meal-subscription", "jpg", case_card("meal-subscription", "03", "Subscription", "Nourish")),
+    ("rights-management", "jpg", case_card("rights-management", "04", "Design System", "Rights")),
     ("novus", "jpg", case_card("novus", "05", "Novus Insights", "Insight")),
     ("eden", "jpg", case_card("eden", "06", "Eden AI", "Search")),
-    ("curam", "jpg", case_card("curam", "06", "Curam Care", "Care", kicker="ALSO · SHOGHI BAGUL")),
+    ("caregiver-marketplace", "jpg", case_card("caregiver-marketplace", "06", "Marketplace", "Care", kicker="ALSO · SHOGHI BAGUL")),
 ]
 
 

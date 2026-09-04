@@ -17,7 +17,7 @@ js/site.js              Footer clock, copyright year, scroll reveals
 assets/                 Resume PDF, favicon, Open Graph share images
 tools/                  One-off scripts (see below)
 sitemap.xml, robots.txt SEO
-vercel.json             cleanUrls: true — extension-less routes (/about, /work/curam)
+vercel.json             cleanUrls: true — extension-less routes (/about, /work/connectx)
 ```
 
 ## Running locally

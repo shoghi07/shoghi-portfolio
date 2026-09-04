@@ -391,13 +391,13 @@ p {
 	letter-spacing: -0.02em;
 }
 
-.cover--quixera {
+.cover--sports-ecosystem {
 	background:
 		radial-gradient(circle at 18% 20%, rgba(255, 220, 140, 0.28), transparent 28%),
 		linear-gradient(160deg, #173528 0%, #0d2118 55%, #2a4a1d 100%);
 }
 
-.cover--quixera::before {
+.cover--sports-ecosystem::before {
 	content: "";
 	position: absolute;
 	inset: 18% -10% auto;
@@ -429,13 +429,13 @@ p {
 	box-shadow: 0 0 0 18px rgba(194, 58, 23, 0.12);
 }
 
-.cover--delicut {
+.cover--meal-subscription {
 	background:
 		radial-gradient(circle at 80% 20%, rgba(255, 196, 92, 0.45), transparent 32%),
 		linear-gradient(200deg, #c75a24 0%, #8d2d16 70%, #24110c 100%);
 }
 
-.cover--delicut::before {
+.cover--meal-subscription::before {
 	content: "";
 	position: absolute;
 	width: 46%;
@@ -447,11 +447,11 @@ p {
 	border: 1px solid rgba(243, 236, 224, 0.28);
 }
 
-.cover--pubadmin {
+.cover--rights-management {
 	background: linear-gradient(180deg, #1a2744 0%, #0e1526 100%);
 }
 
-.cover--pubadmin::before {
+.cover--rights-management::before {
 	content: "";
 	position: absolute;
 	inset: 16% 12%;
@@ -480,12 +480,12 @@ p {
 	clip-path: polygon(0 70%, 18% 40%, 34% 55%, 52% 18%, 70% 42%, 88% 8%, 100% 28%, 100% 100%, 0 100%);
 }
 
-.cover--curam {
+.cover--caregiver-marketplace {
 	background: linear-gradient(160deg, #d7c4a8 0%, #7f9b8a 46%, #2d4a40 100%);
 	color: #161411;
 }
 
-.cover--curam .cover-word {
+.cover--caregiver-marketplace .cover-word {
 	color: #161411;
 }
 
