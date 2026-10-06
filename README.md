@@ -41,6 +41,24 @@ new one means:
 4. Link it from `index.html` (Selected work or Also) and add it to
    `sitemap.xml`.
 
+### Client naming
+
+Not every client can be named publicly, so the site is deliberately mixed.
+Check this list before writing or renaming a case study — the split is a
+decision, not an oversight:
+
+| Named on the site | Anonymised (descriptive title + slug) |
+| --- | --- |
+| ConnectX | Curam Care → `caregiver-marketplace` |
+| Eden AI | Delicut → `meal-subscription` |
+| Novus Insights | PubAdmin → `rights-management` |
+| | Quixera → `sports-ecosystem` |
+
+The anonymised four keep the client name out of the slug, `<title>`, `<h1>`,
+every meta tag, the OG card filename, and body copy. Note that the résumé
+names all of them — that is intentional: the résumé is sent to a known
+recipient, the site is public.
+
 ## Regenerating Open Graph images
 
 ```bash
