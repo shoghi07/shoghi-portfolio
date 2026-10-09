@@ -1,0 +1,20 @@
+# Shoghi Bagul
+
+> Shoghi Bagul is a senior product designer working on healthcare, AI-native SaaS, and complex enterprise workflows. Design Lead at Tcules.
+
+Product designer and Design Lead at Tcules, Ahmedabad (M.Des, NID Ahmedabad). Every page below has a plain-text Markdown version, generated from the page itself.
+
+## Pages
+
+- [Shoghi Bagul · Product Designer](https://shoghibagul.com/): Shoghi Bagul is a senior product designer working on healthcare, AI-native SaaS, and complex enterprise workflows. Design Lead at Tcules. Text: https://shoghibagul.com/index.md
+- [About · Shoghi Bagul](https://shoghibagul.com/about): Shoghi Bagul is Design Lead at Tcules. NID Ahmedabad. Engineer by training. Text: https://shoghibagul.com/about.md
+
+## Case studies
+
+- [Delicut — From Meal Subscription to Ongoing Product Experience | Shoghi Bagul](https://shoghibagul.com/work/delicut): A product design case study on shaping Delicut’s acquisition, meal-plan subscription, checkout and mobile experience through UX research, product strategy and interaction design. Text: https://shoghibagul.com/work/delicut.md
+
+## Contact
+
+- Email: shoghi07@gmail.com
+- LinkedIn: https://www.linkedin.com/in/shoghi07
+- Behance: https://www.behance.net/shoghi07

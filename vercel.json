@@ -1,3 +1,45 @@
 {
-	"cleanUrls": true
+	"cleanUrls": true,
+	"headers": [
+		{
+			"source": "/(.*)\\.md",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain; charset=utf-8"
+				},
+				{
+					"key": "X-Robots-Tag",
+					"value": "noindex"
+				}
+			]
+		},
+		{
+			"source": "/llms.txt",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain; charset=utf-8"
+				}
+			]
+		},
+		{
+			"source": "/read/:path*",
+			"headers": [
+				{
+					"key": "X-Robots-Tag",
+					"value": "noindex"
+				}
+			]
+		},
+		{
+			"source": "/read",
+			"headers": [
+				{
+					"key": "X-Robots-Tag",
+					"value": "noindex"
+				}
+			]
+		}
+	]
 }
