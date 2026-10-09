@@ -1027,3 +1027,377 @@ a.job:focus-visible::after {
 		opacity: 1;
 	}
 }
+
+/* ==========================================================================
+   Career timeline
+   Two views of the same four roles. The years strip (.years, homepage) shows
+   the whole span as one shape; the spine (.timeline--spine, about) shows the
+   roles in sequence with duration as a proportional bar.
+
+   All geometry is authored here as a correct-at-publish fallback and then
+   recomputed from data-start / data-end in site.js, so "now" never drifts.
+   ========================================================================== */
+
+/* ---------- A · the years strip ---------- */
+
+.years {
+	margin: 0;
+	padding: 0;
+}
+
+.years-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.4rem 1rem;
+	margin-bottom: 1.1rem;
+	color: var(--ink-3);
+	font-family: var(--mono);
+	font-size: 0.7rem;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+}
+
+.years-plot {
+	position: relative;
+	/* headroom for the "now" label, which rides above both bands */
+	padding-top: 1.3rem;
+}
+
+.band {
+	position: relative;
+	height: 1.55rem;
+}
+
+.band + .band {
+	margin-top: 0.35rem;
+}
+
+.seg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: calc(var(--s) * 1%);
+	width: calc(var(--w) * 1%);
+	display: flex;
+	align-items: center;
+	padding: 0 0.5rem;
+	font-size: 0.78rem;
+	letter-spacing: -0.01em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.js [data-reveal] .seg {
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.9s var(--ease);
+	transition-delay: var(--d, 0ms);
+}
+
+.js [data-reveal] .seg > span {
+	opacity: 0;
+	transition: opacity 0.4s var(--ease);
+	transition-delay: calc(var(--d, 0ms) + 420ms);
+}
+
+.js [data-reveal].is-in .seg {
+	transform: scaleX(1);
+}
+
+.js [data-reveal].is-in .seg > span {
+	opacity: 1;
+}
+
+/* the company bracket is an outline, so the roles inside read as the fill */
+.seg--org {
+	border: 1px solid var(--rule-strong);
+	border-bottom: 0;
+	color: var(--ink-2);
+	font-family: var(--mono);
+	font-size: 0.68rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.seg--role {
+	background: var(--ink);
+	color: var(--paper-2);
+}
+
+.seg--role.is-current {
+	background: var(--accent);
+}
+
+.seg--role.is-prior {
+	background: rgba(23, 21, 18, 0.28);
+	color: var(--ink);
+}
+
+/* runs up through both bands so the label clears the org bracket */
+.now-mark {
+	position: absolute;
+	top: -2.25rem;
+	bottom: 1.5rem;
+	left: calc(var(--s) * 1%);
+	width: 1px;
+	background: var(--accent);
+	opacity: 0.45;
+}
+
+.now-mark::after {
+	content: "now";
+	position: absolute;
+	top: -1.05rem;
+	left: 0;
+	transform: translateX(-50%);
+	color: var(--accent-text);
+	font-family: var(--mono);
+	font-size: 0.6rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.axis {
+	position: relative;
+	height: 1.5rem;
+	margin-top: 0.5rem;
+	border-top: 1px solid var(--rule);
+}
+
+.axis span {
+	position: absolute;
+	top: 0.4rem;
+	left: calc(var(--s) * 1%);
+	transform: translateX(-50%);
+	color: var(--ink-3);
+	font-family: var(--mono);
+	font-size: 0.67rem;
+	letter-spacing: 0.04em;
+}
+
+.axis span::before {
+	content: "";
+	position: absolute;
+	top: -0.4rem;
+	left: 50%;
+	width: 1px;
+	height: 0.28rem;
+	background: var(--rule-strong);
+}
+
+/* ---------- B · the vertical spine ---------- */
+
+.timeline--spine {
+	--date-col: 9.5rem;
+	--gutter: 1.2rem;
+	--mo-max: 30;
+	position: relative;
+}
+
+.spine {
+	position: absolute;
+	top: 0.55rem;
+	bottom: 1.4rem;
+	left: calc(var(--date-col) + var(--gutter) / 2);
+	width: 1px;
+	background: var(--rule);
+}
+
+.spine i {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: 1px;
+	background: var(--accent);
+	transform: scaleY(var(--p, 0));
+	transform-origin: top;
+}
+
+.job--tl {
+	position: relative;
+	grid-template-columns: var(--date-col) 1fr;
+	gap: var(--gutter);
+}
+
+/* the tick that sits on the spine */
+.job--tl::before {
+	content: "";
+	position: absolute;
+	top: 1.55rem;
+	left: calc(var(--date-col) + var(--gutter) / 2);
+	width: 7px;
+	height: 7px;
+	margin: -3px 0 0 -3px;
+	background: var(--paper);
+	border: 1px solid var(--rule-strong);
+	border-radius: 50%;
+	transition: background 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+
+.job--tl.is-past::before {
+	background: var(--accent);
+	border-color: var(--accent);
+}
+
+.job--tl.is-now::before {
+	box-shadow: 0 0 0 4px rgba(194, 58, 23, 0.14);
+}
+
+.tl-date {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.4rem;
+}
+
+/* duration as a bar: width is proportional to the longest role, so the four
+   are comparable at a glance without needing a shared axis */
+.dur {
+	width: 100%;
+	height: 4px;
+	background: rgba(23, 21, 18, 0.1);
+}
+
+.dur i {
+	display: block;
+	height: 100%;
+	width: calc(var(--mo) * 100% / var(--mo-max));
+	background: var(--rule-strong);
+}
+
+.js .dur i {
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.85s var(--ease);
+	transition-delay: var(--d, 0ms);
+}
+
+.js .job--tl.is-past .dur i {
+	transform: scaleX(1);
+}
+
+.job--tl.is-now .dur i {
+	background: var(--accent);
+}
+
+.dur-label {
+	color: var(--ink-3);
+	font-family: var(--mono);
+	font-size: 0.66rem;
+	letter-spacing: 0.06em;
+}
+
+/* a tinted band on the spine, so "these three are one job" reads instantly */
+.tl-group {
+	position: relative;
+}
+
+.tl-group::before {
+	content: "";
+	position: absolute;
+	top: 2.9rem;
+	bottom: 0;
+	left: calc(var(--date-col) + var(--gutter) / 2);
+	width: 3px;
+	margin-left: -1px;
+	background: rgba(194, 58, 23, 0.18);
+}
+
+.tl-group-head {
+	display: grid;
+	grid-template-columns: var(--date-col) 1fr;
+	gap: var(--gutter);
+	padding: 1.5rem 0 0.35rem;
+}
+
+.tl-group-head b {
+	grid-column: 2;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 0.55rem;
+	font-family: var(--mono);
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--ink-2);
+}
+
+.tl-group-head b em {
+	font-style: normal;
+	letter-spacing: 0.04em;
+	text-transform: none;
+	color: var(--ink-3);
+}
+
+@media (max-width: 860px) {
+	/* The spine moves into a narrow left gutter when .job collapses to one
+	   column. .spine and .tl-group::before resolve against the container's
+	   padding box, but the tick resolves against .job--tl, whose box starts at
+	   the content edge — hence the negative offset, so all three line up. */
+	.timeline--spine {
+		--date-col: 0rem;
+		--gutter: 1.7rem;
+		padding-left: 1.7rem;
+	}
+
+	.job--tl {
+		grid-template-columns: 1fr;
+		gap: 0.25rem;
+	}
+
+	.job--tl::before {
+		top: 1.45rem;
+		left: -0.85rem;
+	}
+
+	.tl-group::before {
+		left: -0.85rem;
+	}
+
+	.tl-group-head {
+		grid-template-columns: 1fr;
+		padding-left: 0;
+	}
+
+	.tl-group-head b {
+		grid-column: 1;
+	}
+
+	.tl-date {
+		margin-bottom: 0.3rem;
+	}
+
+	.dur {
+		max-width: 11rem;
+	}
+}
+
+@media (max-width: 600px) {
+	/* at 375px the strip runs at ~48px per year: the shortest segment is 46px
+	   wide, so the label has to shrink to clear it, and the axis has to thin */
+	.axis span.minor {
+		display: none;
+	}
+
+	.seg {
+		font-size: 0.7rem;
+		padding: 0 0.35rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.js [data-reveal] .seg,
+	.js [data-reveal] .seg > span,
+	.js .dur i {
+		transform: none;
+		opacity: 1;
+		transition: none;
+	}
+
+	.spine i {
+		transform: scaleY(1);
+	}
+}

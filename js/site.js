@@ -68,4 +68,106 @@
 		onScroll();
 		window.addEventListener("scroll", onScroll, { passive: true });
 	}
+
+	/* ------------------------------------------------------------------
+	   Career timeline.
+
+	   Both the homepage years strip and the about-page spine are authored
+	   in HTML with correct-at-publish numbers, then recomputed here from
+	   data-start / data-end ("now" for the current role). Nothing that
+	   depends on today's date is hardcoded, so the figures, the duration
+	   bars and the "4 yrs 10 mos" labels stay right on their own.
+	   ------------------------------------------------------------------ */
+
+	/* months since year 0, so durations are plain subtraction */
+	const toMonths = (value) => {
+		if (!value || value === "now") {
+			const d = new Date();
+			return d.getFullYear() * 12 + d.getMonth();
+		}
+		const m = /^(\d{4})-(\d{2})$/.exec(value);
+		return m ? Number(m[1]) * 12 + (Number(m[2]) - 1) : null;
+	};
+
+	/* an entry with no data-start (the "Earlier" row) has no span at all —
+	   without this it would read as now→now and set a zero-width bar */
+	const spanOf = (el) => {
+		if (!el.dataset.start) return null;
+		const start = toMonths(el.dataset.start);
+		const end = toMonths(el.dataset.end);
+		return start === null || end === null ? null : { start, end, months: end - start };
+	};
+
+	const formatDuration = (months) => {
+		const y = Math.floor(months / 12);
+		const m = months % 12;
+		const parts = [];
+		if (y) parts.push(`${y} yr${y > 1 ? "s" : ""}`);
+		if (m) parts.push(`${m} mo${m > 1 ? "s" : ""}`);
+		return parts.join(" ") || "—";
+	};
+
+	/* --- A · years strip: place every segment on a fixed 2020–2027 axis --- */
+	document.querySelectorAll("[data-years]").forEach((fig) => {
+		const t0 = toMonths(fig.dataset.years || "2020-01");
+		const span = Number(fig.dataset.span || 7) * 12;
+		const pct = (m) => ((m - t0) / span) * 100;
+
+		fig.querySelectorAll("[data-seg]").forEach((seg) => {
+			const s = spanOf(seg);
+			if (!s) return;
+			seg.style.setProperty("--s", pct(s.start).toFixed(2));
+			seg.style.setProperty("--w", (pct(s.end) - pct(s.start)).toFixed(2));
+		});
+
+		const now = fig.querySelector("[data-now-mark]");
+		if (now) now.style.setProperty("--s", pct(toMonths("now")).toFixed(2));
+	});
+
+	/* --- durations: every [data-dur] prints the span of its own dates --- */
+	document.querySelectorAll("[data-dur]").forEach((el) => {
+		const s = spanOf(el);
+		if (s) el.textContent = formatDuration(s.months);
+	});
+
+	/* --- B · spine: bar widths, then fill and ticks driven by scroll --- */
+	const spineBox = document.querySelector("[data-spine]");
+	if (spineBox) {
+		const roles = [...spineBox.querySelectorAll("[data-tick]")];
+		const spans = roles.map(spanOf);
+		const longest = Math.max(1, ...spans.map((s) => (s ? s.months : 0)));
+		spineBox.style.setProperty("--mo-max", String(longest));
+		roles.forEach((role, i) => {
+			if (spans[i]) role.style.setProperty("--mo", String(spans[i].months));
+		});
+
+		const fill = spineBox.querySelector("[data-spine-fill]");
+		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+			roles.forEach((r) => r.classList.add("is-past"));
+		} else {
+			let queued = false;
+			const draw = () => {
+				const box = spineBox.getBoundingClientRect();
+				const line = window.innerHeight * 0.62;
+				if (fill) {
+					const p = (line - box.top) / box.height;
+					fill.style.setProperty("--p", String(Math.max(0, Math.min(1, p))));
+				}
+				roles.forEach((r) => {
+					r.classList.toggle("is-past", r.getBoundingClientRect().top < line);
+				});
+			};
+			const onTimelineScroll = () => {
+				if (queued) return;
+				queued = true;
+				requestAnimationFrame(() => {
+					queued = false;
+					draw();
+				});
+			};
+			window.addEventListener("scroll", onTimelineScroll, { passive: true });
+			window.addEventListener("resize", onTimelineScroll, { passive: true });
+			draw();
+		}
+	}
 })();
