@@ -64,10 +64,40 @@
 
 	const nav = document.querySelector("[data-header]");
 	if (nav) {
-		const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 12);
+		/* the header hides while scrolling down and comes back on any scroll
+		   up; it always shows near the top of the page */
+		let lastY = window.scrollY;
+		const onScroll = () => {
+			const y = window.scrollY;
+			nav.classList.toggle("is-scrolled", y > 12);
+			if (y < nav.offsetHeight * 2) nav.classList.remove("is-hidden");
+			else if (y > lastY + 4) nav.classList.add("is-hidden");
+			else if (y < lastY - 4) nav.classList.remove("is-hidden");
+			if (Math.abs(y - lastY) > 4) lastY = y;
+		};
 		onScroll();
 		window.addEventListener("scroll", onScroll, { passive: true });
 	}
+
+	/* --- back to top: appears after ~1.5 screens of scrolling --- */
+	const toTop = document.createElement("button");
+	toTop.type = "button";
+	toTop.className = "to-top";
+	toTop.setAttribute("aria-label", "Back to top");
+	toTop.innerHTML =
+		'<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" /></svg><span class="to-top-tip" aria-hidden="true">Back to top</span>';
+	document.body.appendChild(toTop);
+	const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+	toTop.addEventListener("click", () => {
+		window.scrollTo({ top: 0, behavior: reduceMotion.matches ? "auto" : "smooth" });
+		const first = document.querySelector("[data-header] .logo");
+		if (first) first.focus({ preventScroll: true });
+	});
+	const onTopScroll = () => {
+		toTop.classList.toggle("is-shown", window.scrollY > window.innerHeight * 1.5);
+	};
+	onTopScroll();
+	window.addEventListener("scroll", onTopScroll, { passive: true });
 
 	/* ------------------------------------------------------------------
 	   Career timeline.
