@@ -169,6 +169,17 @@ COVERS = {
             '<rect width="1200" height="630" fill="url(#h)"/>'
             '<circle cx="420" cy="277" r="138" fill="#f3ece0" fill-opacity=".14" '
             'stroke="#f3ece0" stroke-opacity=".28"/>'),
+    "delicut": dict(
+        defs=lin("g", 200, [(0, "#3f6b3a"), (.62, "#1f3d24"), (1, "#0f1d12")])
+        + rad("h", .78, .24, .36, "#ffb04a", .42),
+        art='<rect width="1200" height="630" fill="url(#g)"/>'
+            '<rect width="1200" height="630" fill="url(#h)"/>'
+            '<line x1="120" y1="151" x2="720" y2="151" stroke="#f3ece0" '
+            'stroke-opacity=".3"/>'
+            '<g fill="#f3ece0" fill-opacity=".16">'
+            + "".join(f'<rect x="{120 + i * 100}" y="151" width="94" height="214"/>'
+                      for i in range(6))
+            + '</g>'),
     "rights-management": dict(
         defs=lin("g", 180, [(0, "#1a2744"), (1, "#0e1526")]),
         art='<rect width="1200" height="630" fill="url(#g)"/>'
@@ -262,6 +273,7 @@ CARDS = [
          ([("Engineer", ACCENT), (" by training.", INK)], 84, False)],
         "ABOUT · SHOGHI BAGUL",
         "M.Des, NID Ahmedabad · Design Lead, Tcules")),
+    ("delicut", "jpg", case_card("delicut", "01", "Delicut", "Ongoing")),
     ("sports-ecosystem", "jpg", case_card("sports-ecosystem", "01", "Ecosystem", "Play")),
     ("connectx", "jpg", case_card("connectx", "02", "ConnectX", "Signal")),
     ("meal-subscription", "jpg", case_card("meal-subscription", "03", "Subscription", "Nourish")),

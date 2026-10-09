@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../" data-page="work">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Delicut — From Meal Subscription to Ongoing Product Experience | Shoghi Bagul</title>
+		<meta
+			name="description"
+			content="A product design case study on shaping Delicut’s acquisition, meal-plan subscription, checkout and mobile experience through UX research, product strategy and interaction design."
+		/>
+		<meta name="theme-color" content="#f2f1ee" />
+		<link rel="alternate" type="text/markdown" href="/work/delicut.md" title="Text version" />
+		<link rel="canonical" href="https://shoghibagul.com/work/delicut" />
+		<meta property="og:site_name" content="Shoghi Bagul" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://shoghibagul.com/work/delicut" />
+		<meta property="og:title" content="Delicut — From Meal Subscription to Ongoing Product Experience | Shoghi Bagul" />
+		<meta property="og:description" content="A product design case study on shaping Delicut’s acquisition, meal-plan subscription, checkout and mobile experience through UX research, product strategy and interaction design." />
+		<meta property="og:image" content="https://shoghibagul.com/assets/og/delicut.jpg" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Delicut: “Ongoing”. Case study by product designer Shoghi Bagul." />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Delicut — From Meal Subscription to Ongoing Product Experience | Shoghi Bagul" />
+		<meta name="twitter:description" content="A product design case study on shaping Delicut’s acquisition, meal-plan subscription, checkout and mobile experience through UX research, product strategy and interaction design." />
+		<meta name="twitter:image" content="https://shoghibagul.com/assets/og/delicut.jpg" />
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
+		<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&family=Figtree:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
+		<script>
+			window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		</script>
+		<script defer src="/_vercel/insights/script.js"></script>
+		<script>
+			window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+		</script>
+		<script defer src="/_vercel/speed-insights/script.js"></script>
+		<script type="application/ld+json" id="ld-page">
+{
+	"@context": "https://schema.org",
+	"@type": "CreativeWork",
+	"genre": "Product design case study",
+	"url": "https://shoghibagul.com/work/delicut",
+	"name": "Less friction, without less confidence.",
+	"headline": "Delicut — From Meal Subscription to Ongoing Product Experience | Shoghi Bagul",
+	"description": "A product design case study on shaping Delicut’s acquisition, meal-plan subscription, checkout and mobile experience through UX research, product strategy and interaction design.",
+	"inLanguage": "en",
+	"author": {
+		"@type": "Person",
+		"name": "Shoghi Bagul",
+		"url": "https://shoghibagul.com/"
+	},
+	"creator": {
+		"@type": "Person",
+		"name": "Shoghi Bagul",
+		"url": "https://shoghibagul.com/"
+	},
+	"about": {
+		"@type": "Organization",
+		"name": "Delicut",
+		"url": "https://delicut.ae/"
+	}
+}
+		</script>
+	</head>
+	<body>
+		<header data-header>
+			<a class="skip" href="#main">Skip to content</a>
+			<div class="nav-inner">
+				<a class="logo" href="../">Shoghi Bagul</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../" aria-current="page">Work</a>
+					<a href="../about">About</a>
+					<a href="mailto:shoghi07@gmail.com">Email</a>
+				</nav>
+			</div>
+		</header>
+
+<!-- Section indicator: one bar per section, in the left gutter -->
+		<nav class="cs-ind" aria-label="Case study sections" data-ind>
+			<a href="#journey"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Journey</span></a>
+			<a href="#research"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Research</span></a>
+			<a href="#decision-01"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Landing page</span></a>
+			<a href="#decision-03"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Plan builder</span></a>
+			<a href="#decision-02"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Checkout</span></a>
+			<a href="#decision-04"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Mobile app</span></a>
+			<a href="#decision-05"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Explored</span></a>
+			<a href="#outcomes"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Outcomes</span></a>
+			<a href="#learnings"><span class="cs-ind-t" aria-hidden="true"></span><span class="cs-ind-l">Learnings</span></a>
+		</nav>
+
+		<main id="main" class="cs">
+			<!-- ==================== Intro ==================== -->
+			<section class="wrap cs-intro cs-stack" id="intro" aria-labelledby="intro-title" data-chapter>
+				<p class="cs-kicker cs-kicker--accent">Case study · Delicut · UAE meal subscription · 2025 · <span data-read-time>11 min read</span></p>
+				<h1 class="cs-h1" id="intro-title">Less friction, without less confidence.</h1>
+				<p class="cs-sub">Rethinking how people choose, buy and manage a meal subscription, from the first visit to the weeks after checkout.</p>
+				<div class="cs-split cs-split--end">
+					<div class="cs-copy">
+						<p>
+							I led UX strategy and product direction for <a class="cs-ext" href="https://delicut.ae/" target="_blank" rel="noopener">Delicut<span class="sr-only"> (opens in a new tab)</span></a>, a UAE meal-subscription service,
+							working day to day with the founder and two designers. The redesigned landing page,
+							checkout and mobile app all shipped.
+						</p>
+					</div>
+					<dl class="cs-intro-facts">
+						<div>
+							<dt>Role</dt>
+							<dd>UX / Product Design Lead</dd>
+						</div>
+						<div>
+							<dt>Duration</dt>
+							<dd>~9 months · 2025</dd>
+						</div>
+						<div>
+							<dt>Team</dt>
+							<dd>Founder, visual + UI designer</dd>
+						</div>
+						<div>
+							<dt>Shipped</dt>
+							<dd>Conversion-focused landing page, checkout flow, mobile app</dd>
+						</div>
+					</dl>
+				</div>
+				<figure class="ph" data-asset="HERO_PRODUCT_COMPOSITION" style="--ratio: 16 / 8; margin-top: 16px">
+					<div class="ph-frame" role="img" aria-label="Placeholder for the hero composition: V2 landing page, checkout and an app screen">
+						<span class="ph-id" data-ph="HERO_PRODUCT_COMPOSITION"></span>
+						<strong class="ph-label" data-ph="V2 landing page, checkout and an app screen, shown large in journey order"></strong>
+					</div>
+				</figure>
+			</section>
+
+			<!-- Full-bleed place strip -->
+			<figure class="cs-bleed" data-asset="DUBAI_SKYLINE_STRIP" aria-label="Placeholder for a Dubai skyline photo">
+				<!-- TODO: add the skyline photo as <img> here (2880 × 840, licensed), and the credit below -->
+				<figcaption class="wrap">
+					<span>
+						<span class="ph-id" data-ph="DUBAI_SKYLINE_STRIP · 2880 × 840, full bleed"></span><br />
+						<strong data-ph="Fresh meals, delivered across the UAE every morning."></strong>
+					</span>
+					<span class="cs-meta" data-ph="Photo: [CREDIT / LICENCE]"></span>
+				</figcaption>
+			</figure>
+
+			<!-- ==================== Journey ==================== -->
+			<section class="wrap cs-ch cs-stack" id="journey" aria-labelledby="journey-title" data-chapter>
+				<p class="cs-kicker">The journey</p>
+				<h2 class="cs-h2" id="journey-title">A subscription is not one moment. It’s six.</h2>
+				<p class="cs-copy">
+					Delicut already had paying customers. I worked across their whole journey, from first
+					visit to the weeks after purchase, rather than on a single screen.
+				</p>
+				<ol class="cs-journey" aria-label="Six stages of the customer journey" data-anim>
+					<li class="rv" style="--d: 0ms">
+						<div class="cs-journey-track" aria-hidden="true"><span class="cs-node">01</span><span class="cs-seg"></span></div>
+						<span class="cs-kicker">Discover</span>
+						<q>What is Delicut?</q>
+						<a href="#decision-01">→ Landing page</a>
+					</li>
+					<li class="rv" style="--d: 130ms">
+						<div class="cs-journey-track" aria-hidden="true"><span class="cs-node">02</span><span class="cs-seg"></span></div>
+						<span class="cs-kicker">Decide</span>
+						<q>Is this right for me?</q>
+						<a href="#decision-01">→ Landing page</a>
+					</li>
+					<li class="rv" style="--d: 260ms">
+						<div class="cs-journey-track" aria-hidden="true"><span class="cs-node">03</span><span class="cs-seg"></span></div>
+						<span class="cs-kicker">Build</span>
+						<q>What should my plan look like?</q>
+						<a href="#decision-03">→ Plan builder</a>
+					</li>
+					<li class="rv" style="--d: 390ms">
+						<div class="cs-journey-track" aria-hidden="true"><span class="cs-node">04</span><span class="cs-seg"></span></div>
+						<span class="cs-kicker">Buy</span>
+						<q>Can I complete this easily?</q>
+						<a href="#decision-02">→ Checkout</a>
+					</li>
+					<li class="rv" style="--d: 520ms">
+						<div class="cs-journey-track" aria-hidden="true"><span class="cs-node">05</span><span class="cs-seg"></span></div>
+						<span class="cs-kicker">Manage</span>
+						<q>Can I control it around my life?</q>
+						<a href="#decision-04">→ Mobile app</a>
+					</li>
+					<li class="rv" style="--d: 650ms">
+						<div class="cs-journey-track" aria-hidden="true"><span class="cs-node">06</span><span class="cs-seg"></span></div>
+						<span class="cs-kicker">Adapt · explored</span>
+						<q>Can it respond to me?</q>
+						<a href="#decision-05">→ Explored</a>
+					</li>
+				</ol>
+			</section>
+
+			<!-- ==================== Research ==================== -->
+			<section class="wrap cs-ch cs-stack" id="research" aria-labelledby="research-title" data-chapter>
+				<div class="cs-split cs-split--end">
+					<div class="cs-stack" style="gap: 14px">
+						<p class="cs-kicker">Research · 5 conversations, CX, recordings</p>
+						<h2 class="cs-h2" id="research-title">Five questions people needed answered before committing.</h2>
+					</div>
+					<p class="cs-small">
+						I spoke with renewers, people who didn’t renew, and visitors who left, and added CX
+						input, analytics and session recordings. A small, directional sample: recordings showed
+						where people left, not why. Some found the site clean and easy; the gaps were in what it
+						answered.
+					</p>
+				</div>
+				<ol class="cs-qs" aria-label="Five questions people needed answered, and the decision each led to">
+					<li>
+						<strong>Can I see the actual meals?</strong>
+						<span>Menu transparency</span>
+						<a href="#decision-01">→ Landing page</a>
+					</li>
+					<li>
+						<strong>Does it fit my goals?</strong>
+						<span>Some didn’t know customization existed until CX told them</span>
+						<a href="#decision-03">→ Plan builder</a>
+					</li>
+					<li>
+						<strong>Can I trust it?</strong>
+						<span>Reviews, freshness, quality</span>
+						<a href="#decision-01">→ Landing page</a>
+					</li>
+					<li>
+						<strong>Is it worth the price?</strong>
+						<span>Weighed against cooking and ordering in</span>
+						<a href="#decision-02">→ Landing · checkout</a>
+					</li>
+					<li>
+						<strong>What if my week changes?</strong>
+						<span>Skipping, pausing, trial length</span>
+						<a href="#decision-04">→ Mobile app</a>
+					</li>
+				</ol>
+			</section>
+
+			<!-- Insight band: words brighten as it scrolls through -->
+			<section class="cs-band" id="insight" aria-labelledby="insight-title" data-insight>
+				<div class="wrap">
+					<p class="cs-kicker">The insight</p>
+					<h2 class="cs-insight" id="insight-title" style="--n: 6"><span class="w" style="--i: 0">Minimize </span><span class="w" style="--i: 1">process </span><span class="w" style="--i: 2">friction — </span><span class="w" style="--i: 3">not </span><span class="w" style="--i: 4">decision </span><span class="w" style="--i: 5">confidence.</span></h2>
+					<p>
+						Removing steps could make the process lighter. Removing information too early would
+						leave people unsure what they were buying. So the goal was never “fewer steps”.
+					</p>
+				</div>
+			</section>
+
+			<!-- ==================== Landing page ==================== -->
+			<section class="cs-ch" id="decision-01" aria-labelledby="d1-title" data-chapter>
+				<div class="wrap cs-stack">
+					<div class="cs-head">
+						<span class="cs-kicker">Discover + Decide · Landing page</span>
+						<span class="pill pill--shipped">Shipped · live 1+ yr</span>
+					</div>
+					<h2 class="cs-h2" id="d1-title">Help people decide before asking them to subscribe.</h2>
+					<dl class="ledger">
+						<div>
+							<dt>Evidence</dt>
+							<dd>People wanted real meals, fit with their goals, value against cooking or ordering in, and trust. Stakeholders had assumed price wouldn’t matter much; research said it did.</dd>
+						</div>
+						<div>
+							<dt>Decision</dt>
+							<dd>I restructured the page around the questions people asked, and <b>pushed hardest for real meals and the weekly menu near the top.</b></dd>
+						</div>
+						<div>
+							<dt>Status</dt>
+							<dd><b>Shipped.</b> Three iterations, V1 live, then V2. Live 1+ year; roughly 80–90% of the design remains (my estimate). Conversion wasn’t measured.</dd>
+						</div>
+					</dl>
+
+					<div class="cs-stack" style="gap: 16px; margin-top: 24px">
+						<div class="cs-split cs-split--end" style="gap: 8px 32px">
+							<p class="cs-lead">So the meals came first.</p>
+							<p class="cs-small">Six dishes from Delicut’s current menu, from Mandi and Machboos to biryani and bowls. Real food is what the page puts near the top.</p>
+						</div>
+						<div class="cs-dishes">
+							<figure class="ph" data-asset="DISH_MANDI"><div class="ph-frame" role="img" aria-label="Placeholder: Mandi Style Chicken and Rice"><strong class="ph-label" data-ph="Mandi Style Chicken &amp; Rice"></strong><span class="ph-id" data-ph="mandi-style-chicken-rice.webp"></span></div></figure>
+							<figure class="ph" data-asset="DISH_MACHBOOS"><div class="ph-frame" role="img" aria-label="Placeholder: Lamb Stew and Machboos Rice"><strong class="ph-label" data-ph="Lamb Stew &amp; Machboos Rice"></strong><span class="ph-id" data-ph="lamb-stew-machboos-rice.webp"></span></div></figure>
+							<figure class="ph" data-asset="DISH_SALMON_HARRA"><div class="ph-frame" role="img" aria-label="Placeholder: Salmon Harra with Saffron Rice"><strong class="ph-label" data-ph="Salmon Harra, Saffron Rice"></strong><span class="ph-id" data-ph="salmon-harra-saffron-rice.webp"></span></div></figure>
+							<figure class="ph" data-asset="DISH_PRAWN_MASHAWI"><div class="ph-frame" role="img" aria-label="Placeholder: Prawn Mashawi"><strong class="ph-label" data-ph="Prawn Mashawi"></strong><span class="ph-id" data-ph="prawns-mashawi.webp"></span></div></figure>
+							<figure class="ph" data-asset="DISH_QUINOA_BIRYANI"><div class="ph-frame" role="img" aria-label="Placeholder: Healthy Quinoa Biryani"><strong class="ph-label" data-ph="Healthy Quinoa Biryani"></strong><span class="ph-id" data-ph="healthy-quinoa-biryani.webp"></span></div></figure>
+							<figure class="ph" data-asset="DISH_GYRO_BOWL"><div class="ph-frame" role="img" aria-label="Placeholder: Gyro Nourish Bowl"><strong class="ph-label" data-ph="Gyro Nourish Bowl"></strong><span class="ph-id" data-ph="gyro-nourish-bowl.webp"></span></div></figure>
+						</div>
+						<p class="cs-meta" data-ph="Photography: delicut.ae · [CONFIRM PERMISSION]"></p>
+					</div>
+
+					<div class="cs-split" style="margin-top: 32px">
+						<div class="cs-copy">
+							<p style="color: var(--ink); font-size: 1.15rem">The content was already there. It was in the wrong order for the questions people were asking.</p>
+							<p>The original page had a meal-plan proposition, benefits, a menu preview, pricing and testimonials, arranged as product → features → offer. I reordered it into a confidence sequence and added goals, so people could recognize themselves before choosing a plan.</p>
+						</div>
+						<figure class="cs-stack" style="gap: 8px; margin: 0" data-anim>
+							<ol class="cs-reorder" role="img" aria-label="Simplified section order: the menu moves from third to second, and a goals section is added">
+								<li style="--from: 0; --to: 0"><strong>Proposition &amp; offer</strong></li>
+								<li class="is-moved" style="--from: 2; --to: 1"><strong>Real meals &amp; weekly menu</strong><span><span class="tag-before">3rd</span><span class="tag-after">moved up</span></span></li>
+								<li style="--from: 1; --to: 2"><strong>Benefits &amp; value</strong></li>
+								<li class="is-new" style="--from: 3; --to: 3"><strong>Your goal</strong><span>new</span></li>
+								<li style="--from: 3; --to: 4"><strong>Reviews &amp; stories</strong></li>
+								<li style="--from: 4; --to: 5"><strong>FAQ &amp; support</strong></li>
+							</ol>
+							<figcaption class="cs-meta">Simplified section order, original → redesign. Illustrative.</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<!-- Pinned: the full V2 page scrolls inside a browser frame -->
+				<div class="pin" style="--len: 3.2" data-pin="browser">
+					<div class="pin-stage">
+						<div class="wrap pin-row">
+							<div class="cs-device" data-view="desktop" data-device>
+							<div class="cs-browser" role="region" aria-label="V2 landing page on desktop, full length">
+								<div class="cs-browser-tabs" aria-hidden="true">
+									<span class="cs-browser-lights"><i></i><i></i><i></i></span>
+									<span class="cs-tab">
+										<span class="cs-tab-fav">D</span>
+										<span class="cs-tab-title">Meal Plans Dubai | Healthy Meal Delivery UAE | Delicut</span>
+										<span class="cs-tab-x"><svg viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" /></svg></span>
+									</span>
+									<span class="cs-tab-new"><svg viewBox="0 0 14 14"><path d="M7 2.5v9M2.5 7h9" /></svg></span>
+								</div>
+								<div class="cs-browser-bar" aria-hidden="true">
+									<span class="cs-browser-nav">
+										<span><svg viewBox="0 0 14 14"><path d="M11.5 7h-9M6 3L2 7l4 4" /></svg></span>
+										<span><svg viewBox="0 0 14 14"><path d="M2.5 7h9M8 3l4 4-4 4" /></svg></span>
+										<span><svg viewBox="0 0 14 14"><path d="M11.5 7a4.5 4.5 0 1 1-1.3-3.2M11.5 2.5v2.8H8.7" /></svg></span>
+									</span>
+									<span class="cs-url"><svg viewBox="0 0 12 12"><rect x="2.5" y="5.5" width="7" height="5" rx="1" /><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5" /></svg>delicut.ae<span>/</span></span>
+									<span><svg viewBox="0 0 14 14"><path d="M7 3h0M7 7h0M7 11h0" stroke-width="2.4" /></svg></span>
+								</div>
+								<div class="cs-browser-vp" data-vp="desktop">
+									<span class="cs-browser-thumb" aria-hidden="true"></span>
+									<!-- TODO: replace the blocks with one tall desktop screenshot: <img src="…v2-full-page.webp" alt="…"> and add .has-img -->
+									<div class="cs-browser-page cs-blocks" data-page="desktop" data-asset="V2_FULL_PAGE">
+										<div style="--h: 460px"><span class="ph-id" data-ph="V2_FULL_PAGE · hero"></span><strong data-ph="Plans, and the offer in one line"></strong></div>
+										<div style="--h: 360px"><span class="ph-id" data-ph="V2_FULL_PAGE · value"></span><strong data-ph="The smarter alternative to cooking or ordering in"></strong></div>
+										<div class="is-key" style="--h: 760px"><span class="ph-id" data-ph="V2_FULL_PAGE · meals"></span><strong data-ph="Real meals and the weekly menu"></strong></div>
+										<div style="--h: 320px"><span class="ph-id" data-ph="V2_FULL_PAGE · proof"></span><strong data-ph="Trusted by teams"></strong></div>
+										<div style="--h: 560px"><span class="ph-id" data-ph="V2_FULL_PAGE · fit"></span><strong data-ph="Built for real life"></strong></div>
+										<div style="--h: 600px"><span class="ph-id" data-ph="V2_FULL_PAGE · goals"></span><strong data-ph="What’s your goal?"></strong></div>
+										<div style="--h: 620px"><span class="ph-id" data-ph="V2_FULL_PAGE · stories"></span><strong data-ph="Real people, real change"></strong></div>
+										<div style="--h: 560px"><span class="ph-id" data-ph="V2_FULL_PAGE · support"></span><strong data-ph="FAQ and support"></strong></div>
+									</div>
+								</div>
+							</div>
+							<!-- mobile: the same page in a phone -->
+							<div class="cs-phone" role="region" aria-label="V2 landing page on mobile, full length">
+								<div class="cs-phone-status" aria-hidden="true">
+									<span>9:41</span>
+									<span class="cs-phone-island"></span>
+									<span class="cs-phone-icons">
+										<svg viewBox="0 0 18 12"><path d="M1 11h2V8H1zM5 11h2V6H5zM9 11h2V4H9zM13 11h2V1h-2z" fill="currentColor" stroke="none" /></svg>
+										<svg viewBox="0 0 16 12"><path d="M1.5 4.5a9 9 0 0 1 13 0M4 7a5.5 5.5 0 0 1 8 0M6.5 9.5a2 2 0 0 1 3 0" /></svg>
+										<svg viewBox="0 0 26 12"><rect x="1" y="1.5" width="21" height="9" rx="2.5" /><rect x="3" y="3.5" width="15" height="5" rx="1" fill="currentColor" stroke="none" /><path d="M24 4.5v3" /></svg>
+									</span>
+								</div>
+								<div class="cs-browser-vp cs-phone-vp" data-vp="mobile">
+									<span class="cs-browser-thumb" aria-hidden="true"></span>
+									<!-- TODO: replace the blocks with one tall mobile screenshot: <img src="…v2-mobile-full-page.webp" alt="…"> and add .has-img -->
+									<div class="cs-browser-page cs-blocks" data-page="mobile" data-asset="V2_MOBILE_FULL_PAGE">
+										<div style="--h: 620px"><span class="ph-id" data-ph="V2_MOBILE · hero"></span><strong data-ph="Plans, and the offer in one line"></strong></div>
+										<div style="--h: 300px"><span class="ph-id" data-ph="V2_MOBILE · value"></span><strong data-ph="The smarter alternative to cooking or ordering in"></strong></div>
+										<div class="is-key" style="--h: 900px"><span class="ph-id" data-ph="V2_MOBILE · meals"></span><strong data-ph="Real meals and the weekly menu"></strong></div>
+										<div style="--h: 280px"><span class="ph-id" data-ph="V2_MOBILE · proof"></span><strong data-ph="Trusted by teams"></strong></div>
+										<div style="--h: 760px"><span class="ph-id" data-ph="V2_MOBILE · fit"></span><strong data-ph="Built for real life"></strong></div>
+										<div style="--h: 900px"><span class="ph-id" data-ph="V2_MOBILE · goals"></span><strong data-ph="What’s your goal?"></strong></div>
+										<div style="--h: 820px"><span class="ph-id" data-ph="V2_MOBILE · stories"></span><strong data-ph="Real people, real change"></strong></div>
+										<div style="--h: 700px"><span class="ph-id" data-ph="V2_MOBILE · support"></span><strong data-ph="FAQ and support"></strong></div>
+									</div>
+								</div>
+								<div class="cs-phone-bar" aria-hidden="true">
+									<span class="cs-phone-url"><span>AA</span><span><svg viewBox="0 0 12 12"><rect x="2.5" y="5.5" width="7" height="5" rx="1" /><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5" /></svg>delicut.ae</span><svg viewBox="0 0 14 14"><path d="M11.5 7a4.5 4.5 0 1 1-1.3-3.2M11.5 2.5v2.8H8.7" /></svg></span>
+									<span class="cs-phone-home"></span>
+								</div>
+							</div>
+							</div>
+							<div class="cs-aside">
+								<div class="cs-switch" role="group" aria-label="Preview the page on">
+									<button type="button" aria-pressed="true" data-view-btn="desktop">Desktop</button>
+									<button type="button" aria-pressed="false" data-view-btn="mobile">Mobile</button>
+								</div>
+							<ol class="pin-aside" aria-label="What to notice" data-notes>
+								<li data-range="0 0.1"><b>Hero</b><span>Plans and the offer in one line.</span></li>
+								<li data-range="0.1 0.32"><b>1 · Value + food</b><span>Framed against cooking or ordering in, then real meals and the menu.</span></li>
+								<li data-range="0.32 0.48"><b>2 · Proof</b><span>Business proof answers “can I trust it?”</span></li>
+								<li data-range="0.48 0.64"><b>3 · Real-life fit</b><span>Flexibility and nutrition, in everyday terms.</span></li>
+								<li data-range="0.64 0.82"><b>4 · Your goal</b><span>People recognize themselves before they choose a plan.</span></li>
+								<li data-range="0.82 1.01"><b>5 · Stories + support</b><span>Customer stories and FAQ settle what’s left.</span></li>
+							</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrap cs-stack" style="padding-top: 96px; gap: 56px">
+					<!-- Before / after: drag the handle; scroll inside to compare further down -->
+					<figure class="cs-stack" style="gap: 12px; margin: 0" data-compare data-text-skip>
+						<div class="cs-compare-labels"><span>Original</span><span>V2</span></div>
+						<div class="cs-compare">
+							<div class="cs-compare-scroll" tabindex="0" role="region" aria-label="Original landing page and V2, overlaid at the same scroll position; scroll to compare further down">
+								<div class="cs-compare-pages">
+									<!-- TODO: swap each block set for a full-width screenshot (<img> in the .ph-frame, add .has-img). Full-length or cropped to the top sections both work. -->
+									<figure class="ph" data-asset="OLD_FULL_PAGE"><div class="ph-frame cs-blocks">
+										<div style="--h: 480px"><span class="ph-id" data-ph="OLD_FULL_PAGE · hero"></span><strong data-ph="Meal-plan proposition and plan card"></strong></div>
+										<div style="--h: 360px"><span class="ph-id" data-ph="OLD_FULL_PAGE · benefits"></span><strong data-ph="What’s different about us?"></strong></div>
+										<div style="--h: 420px"><span class="ph-id" data-ph="OLD_FULL_PAGE · menu"></span><strong data-ph="Menu preview"></strong></div>
+										<div style="--h: 360px"><span class="ph-id" data-ph="OLD_FULL_PAGE · pricing"></span><strong data-ph="Meal plan and pricing"></strong></div>
+										<div style="--h: 340px"><span class="ph-id" data-ph="OLD_FULL_PAGE · testimonial"></span><strong data-ph="Customer testimonial"></strong></div>
+										<div style="--h: 280px"><span class="ph-id" data-ph="OLD_FULL_PAGE · support"></span><strong data-ph="Help and support"></strong></div>
+									</div></figure>
+									<figure class="ph is-after" data-asset="V2_FULL_PAGE_COMPARE"><div class="ph-frame cs-blocks">
+										<div style="--h: 460px"><span class="ph-id" data-ph="V2_FULL_PAGE · hero"></span><strong data-ph="Plans, and the offer in one line"></strong></div>
+										<div style="--h: 360px"><span class="ph-id" data-ph="V2_FULL_PAGE · value"></span><strong data-ph="The smarter alternative to cooking or ordering in"></strong></div>
+										<div class="is-key" style="--h: 760px"><span class="ph-id" data-ph="V2_FULL_PAGE · meals"></span><strong data-ph="Real meals and the weekly menu"></strong></div>
+										<div style="--h: 320px"><span class="ph-id" data-ph="V2_FULL_PAGE · proof"></span><strong data-ph="Trusted by teams"></strong></div>
+										<div style="--h: 560px"><span class="ph-id" data-ph="V2_FULL_PAGE · goals"></span><strong data-ph="What’s your goal?"></strong></div>
+									</div></figure>
+								</div>
+							</div>
+							<div class="cs-compare-handle" role="slider" tabindex="0" aria-label="Compare original and V2" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="Half original, half V2" data-compare-handle>
+								<span class="cs-compare-knob" aria-hidden="true">↔</span>
+							</div>
+						</div>
+						<figcaption class="cs-meta">Drag the ↔ handle to compare. Scroll inside the frame to compare further down the page.</figcaption>
+					</figure>
+
+					<!-- Evolution at a glance -->
+					<figure class="cs-stack" style="gap: 14px; margin: 0">
+						<figcaption class="cs-split cs-split--end" style="gap: 6px 24px">
+							<span class="cs-kicker">How the page evolved, at a glance</span>
+							<span class="cs-small" style="text-align: right">Three iterations to V1, then a refinement into V2.</span>
+						</figcaption>
+						<ol class="cs-film" aria-label="Landing page versions, original to V2">
+							<li><figure class="ph" data-asset="LANDING_ORIGINAL"><div class="ph-frame"></div></figure><b>ORIGINAL</b><span>Product → features → offer</span></li>
+							<li><figure class="ph" data-asset="LANDING_ITERATION_1"><div class="ph-frame"></div></figure><b>ITERATION 1</b><span>The problem, reframed</span></li>
+							<li><figure class="ph" data-asset="LANDING_ITERATION_2"><div class="ph-frame"></div></figure><b>ITERATION 2</b><span>Food first, goals visible</span></li>
+							<li><figure class="ph" data-asset="LANDING_ITERATION_3"><div class="ph-frame"></div></figure><b>ITERATION 3</b><span>A confidence sequence</span></li>
+							<li class="is-live"><figure class="ph" data-asset="LANDING_V1"><div class="ph-frame"><span class="ph-id" data-ph="V1_FULL_PAGE"></span></div></figure><b>V1 · FIRST LIVE</b><span>The decision sequence ships</span></li>
+							<li class="is-live is-current"><figure class="ph" data-asset="LANDING_V2"><div class="ph-frame"><span class="ph-id" data-ph="V2_FULL_PAGE"></span></div></figure><b>V2 · LIVE TODAY</b><span>Refined, live for 1+ year</span></li>
+						</ol>
+					</figure>
+				</div>
+			</section>
+
+			<!-- ==================== Plan builder ==================== -->
+			<section class="wrap cs-ch cs-stack" id="decision-03" aria-labelledby="d3-title" data-chapter>
+				<div class="cs-head">
+					<span class="cs-kicker">Build · Plan builder</span>
+					<span class="pill">Partly shipped</span>
+				</div>
+				<h2 class="cs-h2" id="d3-title">Don’t make everyone start from the same place.</h2>
+				<dl class="ledger">
+					<div>
+						<dt>Evidence</dt>
+						<dd>Customization and goals came up again and again, and some people didn’t know customization existed. Plans also assumed a single person.</dd>
+					</div>
+					<div>
+						<dt>Decision</dt>
+						<dd><b>One plan builder and one checkout; only the starting point varies.</b> Goal-first came first, because most customers weren’t nutrition experts. Their goal pre-selects a calorie range they can still change.</dd>
+					</div>
+					<div>
+						<dt>Status</dt>
+						<dd><b>Goal-first went live</b> during the engagement. We explored calorie-first and Flexi as concepts; neither was validated.</dd>
+					</div>
+				</dl>
+				<div class="cs-split" style="margin-top: 16px">
+					<div class="cs-copy">
+						<p style="color: var(--ink); font-size: 1.15rem">People didn’t arrive knowing the same things.</p>
+						<p>Some knew a goal, like losing weight, but not a calorie target. Some already knew their exact numbers. Some needed a plan that bent around a changing week. Many just wanted to pick meals and go. I mapped each to an entry point that matched how they think, and brought every route to the same finish line.</p>
+					</div>
+					<div class="cs-routes" role="img" aria-label="Four entry routes, Standard, Goal-first, Calorie-first and Flexi, lead into one plan builder and one checkout" data-anim>
+						<ul>
+							<li class="rv" style="--d: 0ms"><span class="cs-route"><span><strong>Standard</strong><small>Core</small></span><em>I know what I want. Let me build it.</em></span><span class="cs-route-line"></span></li>
+							<li class="rv" style="--d: 120ms"><span class="cs-route is-shipped"><span><strong>Goal-first</strong><small>Shipped</small></span><em>I know my goal, not my numbers.</em></span><span class="cs-route-line"></span></li>
+							<li class="rv" style="--d: 240ms"><span class="cs-route is-explore"><span><strong>Calorie-first</strong><small>Explored</small></span><em>I already track my targets.</em></span><span class="cs-route-line"></span></li>
+							<li class="rv" style="--d: 360ms"><span class="cs-route is-explore"><span><strong>Flexi</strong><small>Explored</small></span><em>My week, and my household, change.</em></span><span class="cs-route-line"></span></li>
+						</ul>
+						<div class="cs-route-core rv" style="--d: 1100ms"><strong>One plan builder</strong><span aria-hidden="true">↓</span><strong>One checkout</strong></div>
+					</div>
+				</div>
+				<p class="cs-meta">Illustrative mindsets, not participant quotes.</p>
+				<figure class="ph" data-asset="GOAL_FIRST_FLOW" style="--ratio: 16 / 9">
+					<div class="ph-frame" role="img" aria-label="Placeholder for the goal selection to recommended plan flow">
+						<span class="ph-id" style="color: var(--accent-text)" data-ph="GOAL_FIRST_FLOW · shipped · desktop 1440"></span>
+						<strong class="ph-label" data-ph="Goal selection → a recommended plan the customer can change"></strong>
+					</div>
+				</figure>
+				<div class="cs-split" style="gap: 14px">
+					<figure class="ph ph--explore" data-asset="CALORIE_FIRST_FLOW" style="--ratio: 16 / 10"><div class="ph-frame" role="img" aria-label="Placeholder for the calorie-first exploration"><span class="ph-id" data-ph="CALORIE_FIRST_FLOW · explored"></span><strong class="ph-label" data-ph="Nutrition target → matching plans"></strong></div></figure>
+					<figure class="ph ph--explore" data-asset="FLEXI_PLAN_EXPLORATION" style="--ratio: 16 / 10"><div class="ph-frame" role="img" aria-label="Placeholder for the Flexi plan exploration"><span class="ph-id" data-ph="FLEXI_PLAN · explored"></span><strong class="ph-label" data-ph="Mixed meal quantities, flexible delivery days"></strong></div></figure>
+				</div>
+			</section>
+
+			<!-- ==================== Checkout ==================== -->
+			<section class="cs-ch" id="decision-02" aria-labelledby="d2-title" data-chapter>
+				<div class="wrap cs-stack">
+					<div class="cs-head">
+						<span class="cs-kicker">Buy · Subscription checkout</span>
+						<span class="pill pill--shipped">Shipped · V2</span>
+					</div>
+					<h2 class="cs-h2" id="d2-title">Make subscribing feel like buying.</h2>
+					<dl class="ledger">
+						<div>
+							<dt>Evidence</dt>
+							<dd><b>Observed:</b> recordings showed where people left, and stakeholders flagged drop-off at mobile-number (OTP) verification. <b>Not established:</b> why. V1 improved the flow but kept its sign-up shape.</dd>
+						</div>
+						<div>
+							<dt>Decision</dt>
+							<dd><b>I reframed it as an order:</b> configure, see the cost, give delivery details, pay. A design hypothesis, not a proven fix.</dd>
+						</div>
+						<div>
+							<dt>Status</dt>
+							<dd><b>Shipped — V2 is live.</b> Conversion, completion and order value weren’t measured. AED values in the screens are examples.</dd>
+						</div>
+					</dl>
+
+					<figure class="cs-wall" data-anim>
+						<span class="cs-kicker cs-kicker--accent"><span class="before">Before · a sign-up flow</span><span class="after">After · an order</span></span>
+						<div class="cs-wall-flow" role="img" aria-label="A sign-up and OTP step that interrupted the purchase drops out of the flow; contact details move inside the delivery step">
+							<div class="cs-wall-step"><strong><span class="before">Plan builder</span><span class="after">1 · Customize plan</span></strong></div>
+							<div class="cs-wall-stop"><span class="cs-wall-arrow" aria-hidden="true">→</span><div><i aria-hidden="true">!</i><strong>Sign up · OTP</strong></div></div>
+							<span class="cs-wall-arrow" aria-hidden="true">→</span>
+							<div class="cs-wall-step cs-wall-step--wide">
+								<strong><span class="before">Payment</span><span class="after">2 · Delivery</span></strong>
+								<span class="cs-wall-chip" style="--d: 1200ms"><span>Contact details</span><small>phone or email</small></span>
+								<span class="cs-wall-chip" style="--d: 1400ms"><span>Address and delivery slot</span><small>gated by area</small></span>
+								<span class="cs-wall-chip" style="--d: 1600ms"><span>Payment and coupon</span><small>summary stays visible</small></span>
+							</div>
+							<span class="cs-wall-arrow" aria-hidden="true">→</span>
+							<div class="cs-wall-step"><strong><span class="before">Order</span><span class="after">3 · Confirmation</span></strong></div>
+						</div>
+					</figure>
+				</div>
+
+				<!-- Pinned: the three checkout steps -->
+				<div class="pin" style="--len: 3" data-pin="checkout">
+					<div class="pin-stage">
+						<div class="wrap pin-row">
+							<ol class="pin-aside" aria-label="V2 checkout, three steps" data-steps>
+								<li class="is-active"><b>1 · Customize plan</b><span>Goal or diet, meals, calories, exclusions, days, duration, start date.</span></li>
+								<li><b>2 · Delivery</b><span>Contact asked for as what delivery updates need: phone or email. Then address, slot, payment.</span></li>
+								<li><b>3 · Confirmation</b><span>The end of the purchase, and a hand-off to the app.</span></li>
+								<li class="cs-summary-note" style="opacity: 1; border: 0">Order summary visible at every step: plan · delivery fee · VAT · discount · total</li>
+							</ol>
+							<div class="cs-steps-frames" data-frames>
+								<figure class="ph is-active" data-asset="CHECKOUT_STEP_1"><div class="ph-frame" role="img" aria-label="Placeholder for checkout step 1, customize plan"><span class="ph-id" style="color: var(--accent-text)" data-ph="CHECKOUT_STEP_1 · desktop 1440"></span><strong class="ph-label" data-ph="1 · Customize plan"></strong><span class="cs-small" data-ph="Choice and cost stay connected while the plan is configured."></span></div></figure>
+								<figure class="ph" data-asset="CHECKOUT_STEP_2"><div class="ph-frame" role="img" aria-label="Placeholder for checkout step 2, delivery"><span class="ph-id" style="color: var(--accent-text)" data-ph="CHECKOUT_STEP_2 · desktop 1440"></span><strong class="ph-label" data-ph="2 · Delivery"></strong><span class="cs-small" data-ph="Contact, address, delivery window, payment and coupon."></span></div></figure>
+								<figure class="ph" data-asset="CHECKOUT_STEP_3"><div class="ph-frame" role="img" aria-label="Placeholder for checkout step 3, confirmation"><span class="ph-id" style="color: var(--accent-text)" data-ph="CHECKOUT_STEP_3 · desktop 1440"></span><strong class="ph-label" data-ph="3 · Confirmation"></strong><span class="cs-small" data-ph="Order confirmed, with the next step: get the app."></span></div></figure>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrap" style="padding-top: 96px">
+					<figure class="cs-stack" style="gap: 12px; margin: 0">
+						<figcaption class="cs-kicker" data-text-skip>How the subscription flow evolved · scroll sideways</figcaption>
+						<div class="cs-scroller" role="region" aria-label="Subscription flow iterations, scrollable" tabindex="0">
+							<figure class="ph" data-asset="SUBSCRIPTION_ORIGINAL"><div class="ph-frame"><span class="ph-id" data-ph="ORIGINAL"></span><strong class="ph-label" data-ph="Sign-up model"></strong></div></figure>
+							<figure class="ph" data-asset="SUBSCRIPTION_ITERATION_N"><div class="ph-frame"><span class="ph-id" data-ph="SUBSCRIPTION_ITERATION_[N]"></span><strong class="ph-label" data-ph="[ITERATION NAME]"></strong></div></figure>
+							<figure class="ph" data-asset="SUBSCRIPTION_V1"><div class="ph-frame"><span class="ph-id" data-ph="V1 · TO DEVELOPMENT"></span><strong class="ph-label" data-ph="Improved, still sign-up shaped"></strong></div></figure>
+							<figure class="ph" data-asset="SUBSCRIPTION_V2"><div class="ph-frame" style="border: 1px solid var(--ink)"><span class="ph-id" style="color: var(--accent-text)" data-ph="V2 · LIVE"></span><strong class="ph-label" data-ph="An order"></strong></div></figure>
+						</div>
+					</figure>
+				</div>
+
+				<!-- Trade-off band -->
+				<div class="cs-band">
+					<blockquote class="wrap">
+						<span class="cs-kicker">The trade-off</span>
+						<p class="cs-quote">A phone-only start would have been faster. I kept delivery and preferences before payment, because people wanted to understand meals, fit and delivery before committing.</p>
+					</blockquote>
+				</div>
+			</section>
+
+			<!-- ==================== Mobile app ==================== -->
+			<section class="cs-ch" id="decision-04" aria-labelledby="d4-title" data-chapter>
+				<div class="wrap cs-stack">
+					<div class="cs-head">
+						<span class="cs-kicker">Manage · Mobile app</span>
+						<span class="pill pill--shipped">Shipped · v1.0 live, v2.0 in production</span>
+					</div>
+					<h2 class="cs-h2" id="d4-title">The purchase was only the beginning.</h2>
+					<dl class="ledger">
+						<div>
+							<dt>Evidence</dt>
+							<dd>There was no app. On the web, customers could already skip or pause, but pausing was too coarse: there was no way to skip a few specific days inside a plan, and meals couldn’t be changed. Every change needed 48 hours’ notice.</dd>
+						</div>
+						<div>
+							<dt>Decision</dt>
+							<dd><b>I made the app the home of the ongoing relationship,</b> built around Manage Deliveries: one calendar for skipping and resuming individual days. We explored a Pro tier on top.</dd>
+						</div>
+						<div>
+							<dt>Status</dt>
+							<dd><b>v1.0 live; v2.0, a visual and UX refinement, in production.</b> Support load, retention and engagement weren’t measured.</dd>
+						</div>
+					</dl>
+					<div class="cs-split" style="margin-top: 16px">
+						<div class="cs-stack" style="gap: 20px">
+							<dl class="cs-stats">
+								<div><dt>delivery days in a four-week plan</dt><dd>24</dd></div>
+								<div><dt>cut-off on changes</dt><dd>48h</dd></div>
+								<div><dt>calendar for all of it</dt><dd>1</dd></div>
+							</dl>
+							<p class="cs-copy">Someone on a four-week plan might only need to skip two days in week two. Before, that meant pausing the plan. The new flexibility to skip individual days inside a plan is what we designed.</p>
+						</div>
+						<figure class="cs-week" data-anim>
+							<ol role="img" aria-label="One week in the calendar: Monday and Tuesday locked by the 48-hour cut-off, Thursday and Friday skipped, Sunday has no delivery">
+								<li class="is-lock"><span>Mon</span><span>locked</span></li>
+								<li class="is-lock"><span>Tue</span><span>locked</span></li>
+								<li><span>Wed</span><span>meal</span></li>
+								<li class="is-skip" style="--d: 900ms"><span>Thu</span><span class="s-meal">meal</span><span class="s-skip">skipped</span></li>
+								<li class="is-skip" style="--d: 1500ms"><span>Fri</span><span class="s-meal">meal</span><span class="s-skip">skipped</span></li>
+								<li><span>Sat</span><span>meal</span></li>
+								<li class="is-off"><span>Sun</span><span>off</span></li>
+							</ol>
+							<figcaption>Illustrative week. Days inside the 48-hour cut-off are locked; any later day can be skipped on its own.</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<!-- Pinned: the phone rail, grouped by version -->
+				<div class="pin" style="--len: 3.4" data-pin="phones">
+					<div class="pin-stage">
+						<div class="wrap cs-rail-head"><span class="cs-kicker">App screens · v0.5 → v1.0 → v2.0</span><span class="cs-kicker" data-rail-label></span></div>
+						<ol class="cs-rail" data-rail>
+							<li class="is-first" data-group="v0.5 · low-fidelity prototype"><span class="cs-rail-group">v0.5</span><figure class="ph" data-asset="APP_V0_5_01"><div class="ph-frame"><span class="ph-id" data-ph="APP_V0_5_01"></span><strong class="ph-label" data-ph="[SCREEN NAME]"></strong></div></figure></li>
+							<li data-group="v0.5 · low-fidelity prototype"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V0_5_02"><div class="ph-frame"><span class="ph-id" data-ph="APP_V0_5_02"></span><strong class="ph-label" data-ph="[SCREEN NAME]"></strong></div></figure></li>
+							<li data-group="v0.5 · low-fidelity prototype"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V0_5_03"><div class="ph-frame"><span class="ph-id" data-ph="APP_V0_5_03"></span><strong class="ph-label" data-ph="[SCREEN NAME]"></strong></div></figure></li>
+							<li class="is-first" data-group="v1.0 · live"><span class="cs-rail-group">v1.0</span><figure class="ph" data-asset="APP_V1_0_04"><div class="ph-frame"><span class="ph-id" data-ph="APP_V1_0_04"></span><strong class="ph-label" data-ph="Today"></strong></div></figure></li>
+							<li data-group="v1.0 · live"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V1_0_05"><div class="ph-frame"><span class="ph-id" data-ph="APP_V1_0_05"></span><strong class="ph-label" data-ph="Meal detail"></strong></div></figure></li>
+							<li data-group="v1.0 · live"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V1_0_06"><div class="ph-frame"><span class="ph-id" data-ph="APP_V1_0_06"></span><strong class="ph-label" data-ph="Manage deliveries"></strong></div></figure></li>
+							<li data-group="v1.0 · live"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V1_0_07"><div class="ph-frame"><span class="ph-id" data-ph="APP_V1_0_07"></span><strong class="ph-label" data-ph="Subscription"></strong></div></figure></li>
+							<li class="is-first" data-group="v2.0 · in production"><span class="cs-rail-group" style="color: var(--accent-text)">v2.0</span><figure class="ph" data-asset="APP_V2_0_08"><div class="ph-frame"><span class="ph-id" data-ph="APP_V2_0_08"></span><strong class="ph-label" data-ph="Today"></strong></div></figure></li>
+							<li data-group="v2.0 · in production"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V2_0_09"><div class="ph-frame"><span class="ph-id" data-ph="APP_V2_0_09"></span><strong class="ph-label" data-ph="Meal detail"></strong></div></figure></li>
+							<li data-group="v2.0 · in production"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V2_0_10"><div class="ph-frame"><span class="ph-id" data-ph="APP_V2_0_10"></span><strong class="ph-label" data-ph="Manage deliveries"></strong></div></figure></li>
+							<li data-group="v2.0 · in production"><span class="cs-rail-group"></span><figure class="ph" data-asset="APP_V2_0_11"><div class="ph-frame"><span class="ph-id" data-ph="APP_V2_0_11"></span><strong class="ph-label" data-ph="Subscription"></strong></div></figure></li>
+						</ol>
+					</div>
+				</div>
+
+				<div class="wrap" style="padding-top: 72px">
+					<dl class="cs-versions">
+						<div>
+							<dt>v0.5 · low-fidelity prototype</dt>
+							<dd data-ph="[WHAT THE PROTOTYPE TESTED OR SET UP]"></dd>
+						</div>
+						<div>
+							<dt>v1.0 · live</dt>
+							<dd>Today and upcoming meals, meal detail, Manage Deliveries, subscription details.</dd>
+						</div>
+						<div>
+							<dt>v2.0 · in production</dt>
+							<dd>A visual and UX refinement of v1.0: more distinctive, and easier to use day to day.</dd>
+						</div>
+					</dl>
+				</div>
+			</section>
+
+			<!-- ==================== Explored ==================== -->
+			<section class="wrap cs-ch" id="decision-05" aria-labelledby="d5-title" data-chapter>
+				<div class="cs-explored">
+					<div class="cs-head">
+						<span class="cs-kicker">Adapt · where it could go</span>
+						<span class="pill pill--explore">Explored · not shipped</span>
+					</div>
+					<h2 class="cs-h2" id="d5-title">From delivering meals to adapting around the person.</h2>
+					<p class="cs-copy">
+						The founder wanted Delicut to become more than meal delivery, and a wellness survey
+						pointed to interest in coaching and tracking (directional, not proof of demand). I
+						turned that into concepts: a Pro tier that logs activity and outside meals and adjusts
+						future meals, and an AI Coach. We also sketched trainer and corporate-wellness tools.
+						None were built or validated.
+					</p>
+					<div class="cs-split" style="gap: 14px">
+						<figure class="ph ph--explore" data-asset="PRO_TIER_CONCEPT" style="--ratio: 16 / 10"><div class="ph-frame" role="img" aria-label="Placeholder for the Pro tier concept"><span class="ph-id" data-ph="PRO_TIER_CONCEPT"></span><strong class="ph-label" data-ph="Logging, progress, adjusted meals"></strong></div></figure>
+						<figure class="ph ph--explore" data-asset="AI_COACH_CONCEPT" style="--ratio: 16 / 10"><div class="ph-frame" role="img" aria-label="Placeholder for the AI Coach concept"><span class="ph-id" data-ph="AI_COACH_CONCEPT"></span><strong class="ph-label" data-ph="Observe, recommend, adapt"></strong></div></figure>
+					</div>
+				</div>
+			</section>
+
+			<!-- ==================== Outcomes ==================== -->
+			<section class="wrap cs-ch cs-stack" id="outcomes" aria-labelledby="outcomes-title" data-chapter>
+				<p class="cs-kicker">Outcomes</p>
+				<h2 class="cs-h2" id="outcomes-title">What shipped, and what I can honestly claim.</h2>
+				<div class="cs-cards" data-anim>
+					<div class="is-dark rv" style="--d: 0ms">
+						<span class="cs-kicker">Shipped</span>
+						<ul>
+							<li>Landing page, live 1+ year</li>
+							<li>V2 checkout</li>
+							<li>Goal-first entry</li>
+							<li>Mobile app v1.0; v2.0 in production</li>
+						</ul>
+					</div>
+					<div class="is-soft rv" style="--d: 150ms">
+						<span class="cs-kicker">Business context</span>
+						<span class="cs-big">125K+ · 92% · 4M+</span>
+						<span class="cs-small">Customers (up from 5K+), repeat orders, meals delivered. Reported by Delicut; not attributable to the design.</span>
+					</div>
+					<div class="rv" style="--d: 300ms">
+						<span class="cs-kicker">Directional</span>
+						<span class="cs-small">Research themes from a small sample, and the founder’s report that the business was doing better.</span>
+					</div>
+					<div class="rv" style="--d: 450ms">
+						<span class="cs-kicker">Not measured</span>
+						<span class="cs-small">Conversion, drop-off, order value, retention, task success, support load.</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- ==================== Learnings ==================== -->
+			<section class="cs-ch" id="learnings" aria-labelledby="learnings-title" data-chapter>
+				<div class="wrap cs-stack">
+					<p class="cs-kicker">Learnings</p>
+					<h2 class="cs-h2" id="learnings-title">What Delicut taught me</h2>
+					<p class="cs-copy">I joined to help with research and grew into leading the product experience. I learned as much from the founder and the team as I brought to them. These are the lessons I’ve carried into my work since.</p>
+				</div>
+
+				<!-- Pinned carousel: one learning at a time; each card holds still while you read,
+				     then glides to the next. On phones it becomes a swipeable row. -->
+				<div class="pin cs-learn-pin" style="--len: 4" data-pin="learn">
+					<div class="pin-stage">
+						<div class="wrap cs-learn-head">
+							<nav class="cs-learn-tabs" aria-label="Learnings">
+								<button type="button" data-learn-go="0" aria-current="true"><span>01</span>Partnership</button>
+								<button type="button" data-learn-go="1"><span>02</span>Shared understanding</button>
+								<button type="button" data-learn-go="2"><span>03</span>Leading a small team</button>
+								<button type="button" data-learn-go="3"><span>04</span>Bringing others along</button>
+								<button type="button" data-learn-go="4"><span>05</span>Designing for the business</button>
+								<button type="button" data-learn-go="5"><span>06</span>Differently</button>
+							</nav>
+							<div class="cs-learn-arrows">
+								<button type="button" data-learn-step="-1" aria-label="Previous learning"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5" /></svg></button>
+								<button type="button" data-learn-step="1" aria-label="Next learning"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" /></svg></button>
+							</div>
+						</div>
+						<ol class="cs-learn-track" data-learn-track aria-label="Learnings, one at a time">
+						<li class="cs-learn-card is-active">
+							<span class="cs-learn-n">01 · Partnership</span>
+							<h3>Good product decisions came from working closely with the founder.</h3>
+							<p>Working with the founder every day, I helped weigh priorities, shape the roadmap and decide what could wait. It was the part of the project I enjoyed most.</p>
+							<p class="cs-carry"><span>What I carry forward</span>I try to join product conversations early, so design can help shape priorities, not only respond to them.</p>
+						</li>
+						<li class="cs-learn-card">
+							<span class="cs-learn-n">02 · Shared understanding</span>
+							<h3>Explaining the “why” helped the team move past copying layouts.</h3>
+							<p>On the landing page, it was tempting to point at another site and copy its layout. I worked with the team to give each section a clear objective: which persona it serves and which assumption it tests. Reviewing Hotjar heatmaps and recordings together made those conversations concrete.</p>
+							<p class="cs-carry"><span>What I carry forward</span>I give every section a purpose the team can question, and use real behaviour to ground the discussion.</p>
+						</li>
+						<li class="cs-learn-card">
+							<span class="cs-learn-n">03 · Leading a small team</span>
+							<h3>Clear briefs and close reviews kept two designers moving in one direction.</h3>
+							<p>I led the client conversations and the UX; our visual designer owned the landing page and visual style, and our UI designer the mobile app. With every brief, I explained the product strategy behind the task and reviewed the work closely, and a design system we set up early kept the UI consistent.</p>
+							<p class="cs-carry"><span>What I carry forward</span>I invest in the brief and its context up front, so designers can make good calls without lots of rework.</p>
+						</li>
+						<li class="cs-learn-card">
+							<span class="cs-learn-n">04 · Bringing others along</span>
+							<h3>Familiar patterns made new ideas easier to agree on.</h3>
+							<p>For managing deliveries, we borrowed the date-picking model people know from booking apps like Airbnb: a calendar where each day changes with one tap. Starting from something familiar made it easy for the founder to say yes, and it became one of the app’s most valuable improvements.</p>
+							<p class="cs-carry"><span>What I carry forward</span>When I ask stakeholders to commit to something new, I start from a pattern they already know.</p>
+						</li>
+						<li class="cs-learn-card">
+							<span class="cs-learn-n">05 · Designing for the business</span>
+							<h3>A design is only as good as the team’s ability to run it.</h3>
+							<p>Promotions, payments and upsells needed sign-off from marketing, finance, accounts and sales, and operations needed 48 hours’ notice for any change. Some of our prototyped animations were also hard for developers to rebuild.</p>
+							<p class="cs-carry"><span>What I carry forward</span>I bring operations, finance and engineering in early, and document motion clearly when it matters.</p>
+						</li>
+						<li class="cs-learn-card is-diff">
+							<span class="cs-learn-n">What I’d do differently</span>
+							<h3>Ship the core first, then build towards the vision.</h3>
+							<p>I’d still spend time imagining what the app could become, but keep it separate from what had to ship. On the web, I’d keep the same order: subscription flow first. For the app, I’d agree early on what Pro and Non-Pro include, launch Non-Pro straight away, and introduce Pro a month or two later. It would have saved time and followed how people actually adopt the product.</p>
+						</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<!-- Closing band -->
+			<section class="cs-band cs-end" aria-labelledby="end-title">
+				<div class="wrap">
+					<div class="cs-split cs-split--end" style="gap: 24px 64px">
+						<h2 id="end-title">Understand the decision. Then design the relationship.</h2>
+						<div class="cs-stack" style="gap: 12px">
+							<p>What I took from Delicut: a purchase flow is part of a larger confidence-building journey, a shorter process isn’t better if it makes the offer harder to judge, and a subscription needs designing for the weeks after checkout.</p>
+							<a href="https://delicut.ae/" target="_blank" rel="noopener">See it live at delicut.ae ↗<span class="sr-only"> (opens in a new tab)</span></a>
+						</div>
+					</div>
+					<div class="cs-photos">
+						<figure class="ph" data-asset="CLOSING_MARKETING_HERO"><div class="ph-frame"><strong class="ph-label" data-ph="Marketing hero"></strong><span class="ph-id" data-ph="mobile_Hero_section.webp"></span></div></figure>
+						<figure class="ph" data-asset="CLOSING_DISH_MIXED_GRILL"><div class="ph-frame"><strong class="ph-label" data-ph="Persian One-Pot Mixed Grill"></strong><span class="ph-id" data-ph="persian-one-pot-mixed-grill.webp"></span></div></figure>
+						<figure class="ph" data-asset="CLOSING_DISH_KOFTA"><div class="ph-frame"><strong class="ph-label" data-ph="Chicken Kofta, Almond Couscous"></strong><span class="ph-id" data-ph="chicken-kofta-almond-couscous.webp"></span></div></figure>
+						<figure class="ph" data-asset="CLOSING_CUSTOMER_APP"><div class="ph-frame"><strong class="ph-label" data-ph="A customer with the app"></strong><span class="ph-id" data-ph="[PHOTO FROM CLIENT, IF ANY]"></span></div></figure>
+					</div>
+					<nav class="cs-end-nav" aria-label="More work">
+						<a href="../"><span>BACK</span><strong>All work</strong></a>
+					</nav>
+				</div>
+			</section>
+		</main>
+		<footer class="wrap" data-footer>
+			<div class="foot-top">
+				<a class="foot-mail" href="mailto:shoghi07@gmail.com">shoghi07@gmail.com</a>
+			</div>
+			<div class="foot-meta">
+				<p>© <span data-year>2026</span> Shoghi Bagul</p>
+				<p><span data-clock>Ahmedabad</span></p>
+				<div class="foot-links">
+					<a href="/read/work/delicut" data-text-link>Read as text</a>
+					<a href="https://www.linkedin.com/in/shoghi07" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+					<a href="https://www.behance.net/shoghi07" target="_blank" rel="noopener">Behance<span class="sr-only"> (opens in a new tab)</span></a>
+					<a href="tel:+919601052801">+91 96010 52801</a>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/site.js"></script>
+		<script src="../js/delicut.js"></script>
+	</body>
+</html>
