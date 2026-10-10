@@ -70,7 +70,7 @@ Shipped · live 1+ yr
 
 So the meals came first.
 
-Six dishes from Delicut’s current menu, from Mandi and Machboos to biryani and bowls. Real food is what the page puts near the top.
+In the redesign, real dishes and the weekly menu moved up to second place, right after the offer, so people could judge the food before the plan.
 
 The content was already there. It was in the wrong order for the questions people were asking.
 
@@ -228,6 +228,8 @@ I joined to help with research and grew into leading the product experience. I l
 What I took from Delicut: a purchase flow is part of a larger confidence-building journey, a shorter process isn’t better if it makes the offer harder to judge, and a subscription needs designing for the weeks after checkout.
 
 [See it live at delicut.ae](https://delicut.ae/)
+
+Photos: Delicut
 
 ---
 
