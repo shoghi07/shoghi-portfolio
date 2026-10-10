@@ -55,7 +55,15 @@ PAGES = [
 # when it returns to the homepage's "Selected work". The older anonymised
 # meal-subscription page must stay out: listing it beside the named Delicut
 # page would undo the anonymisation.
-INDEXED_WORK = {"work/delicut.html"}
+INDEXED_WORK = {
+    "work/delicut.html",
+    "work/connectx.html",
+    "work/eden.html",
+    "work/rights-management.html",
+    "work/novus.html",
+    "work/caregiver-marketplace.html",
+    "work/sports-ecosystem.html",
+}
 
 # Clients that can be named (see README "Client naming"), for JSON-LD "about".
 NAMED_CLIENTS = {

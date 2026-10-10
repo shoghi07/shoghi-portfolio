@@ -4,7 +4,7 @@
 
 Design system and complex workflow design for a music rights management platform.
 
-04 · Selected work
+04 · More work
 
 Give a rights-management platform a system it can grow in, and workflows people can finish without getting lost in the ledger.
 

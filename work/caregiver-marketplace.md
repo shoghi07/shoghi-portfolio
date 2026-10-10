@@ -4,7 +4,7 @@
 
 UX analysis and journey design for a UK caregiver hiring marketplace.
 
-Caregiver marketplace · Also
+06 · More work
 
 Find the friction in a healthcare marketplace by watching what people actually do, then redesign the journeys that drop them.
 

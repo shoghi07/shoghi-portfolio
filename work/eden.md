@@ -4,7 +4,7 @@
 
 Collapsing three fragmented entry points into one intelligent search for Eden AI, a developer AI platform.
 
-06 · Selected work
+03 · Selected work
 
 Three separate doors into the same workflow builder were quietly killing it. I collapsed them into one search bar that knows what you’re trying to do.
 

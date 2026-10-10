@@ -274,13 +274,13 @@ CARDS = [
         "ABOUT · SHOGHI BAGUL",
         "M.Des, NID Ahmedabad · Design Lead, Tcules")),
     ("delicut", "jpg", case_card("delicut", "01", "Delicut", "Ongoing")),
-    ("sports-ecosystem", "jpg", case_card("sports-ecosystem", "01", "Ecosystem", "Play")),
+    ("sports-ecosystem", "jpg", case_card("sports-ecosystem", "07", "Ecosystem", "Play", kicker="07 · MORE WORK · SHOGHI BAGUL")),
     ("connectx", "jpg", case_card("connectx", "02", "ConnectX", "Signal")),
     ("meal-subscription", "jpg", case_card("meal-subscription", "03", "Subscription", "Nourish")),
-    ("rights-management", "jpg", case_card("rights-management", "04", "Design System", "Rights")),
-    ("novus", "jpg", case_card("novus", "05", "Novus Insights", "Insight")),
-    ("eden", "jpg", case_card("eden", "06", "Eden AI", "Search")),
-    ("caregiver-marketplace", "jpg", case_card("caregiver-marketplace", "06", "Marketplace", "Care", kicker="ALSO · SHOGHI BAGUL")),
+    ("rights-management", "jpg", case_card("rights-management", "04", "Design System", "Rights", kicker="04 · MORE WORK · SHOGHI BAGUL")),
+    ("novus", "jpg", case_card("novus", "05", "Novus Insights", "Insight", kicker="05 · MORE WORK · SHOGHI BAGUL")),
+    ("eden", "jpg", case_card("eden", "03", "Eden AI", "Search")),
+    ("caregiver-marketplace", "jpg", case_card("caregiver-marketplace", "06", "Marketplace", "Care", kicker="06 · MORE WORK · SHOGHI BAGUL")),
 ]
 
 

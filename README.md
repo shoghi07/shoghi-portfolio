@@ -8,7 +8,7 @@ amount of vanilla JS.
 ## Structure
 
 ```
-index.html            Homepage — hero, selected work, "also", writing
+index.html            Homepage — hero, practice, selected work (3 featured + more work), experience, writing
 about.html             About page — bio, experience timeline, writing
 404.html                Custom not-found page
 work/                   One case-study page per selected project
@@ -48,8 +48,10 @@ new one means:
 2. Add a matching `.cover--<slug>` rule in `css/styles.css`.
 3. Add the project to `tools/generate-og.py` (`COVERS` + `CARDS`) and run it
    to generate its share-card image.
-4. Link it from `index.html` (Selected work or Also) and add it to
-   `sitemap.xml`.
+4. Link it from `index.html` (a featured card or a "More work" row), give
+   it its place in the Previous/Next chain (homepage order) and its number
+   in the kicker and share card, and add it to `sitemap.xml` and
+   `INDEXED_WORK` in `tools/generate-text.py`.
 
 ### Client naming
 

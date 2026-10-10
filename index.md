@@ -4,23 +4,93 @@
 
 Shoghi Bagul is a senior product designer working on healthcare, AI-native SaaS, and complex enterprise workflows. Design Lead at Tcules.
 
-AI-first product designer. I lead design engineering for SaaS and intelligent workflows: healthcare, energy, and enterprise products that have to work in the real world.
+Senior product designer, AI-first. I lead design engineering for SaaS and intelligent workflows: healthcare, energy, and enterprise products that have to work in the real world.
 
 Design Lead, Tcules · M.Des, NID Ahmedabad · Ahmedabad, India
 
+## I lead the work, then I sit in it.
+
+Pairing with founders, scoping ambiguous briefs, and staying on the file through handoff. The through-line is the same: turn messy operational reality into an interface people can trust.
+
+Product thinking · Complex workflows · Design systems · AI interaction · UX research
+
+[More about me](https://shoghibagul.com/about)
+
 ## Selected work
 
-01
+03
+
+UAE · B2C · 2025
 
 ### Delicut
 
 Reframing a meal subscription as an ongoing product experience: acquisition, checkout and mobile.
 
-UAE · B2C
+**UX / Product Design Lead**
 
-2025
+Landing page, checkout flow and mobile app shipped
 
 Link: https://shoghibagul.com/work/delicut
+
+Energy · AI · 2025
+
+### ConnectX
+
+An AI-native workspace for building energy: conversation sets intent, the dashboard stays the work.
+
+**Product definition & demo**
+
+0→1, design and engineering together
+
+Link: https://shoghibagul.com/work/connectx
+
+Developer tools · AI · 2024–25
+
+### Eden AI
+
+One intelligent search bar, replacing three fragmented ways to start a workflow.
+
+**Product design · interaction**
+
+Unified search and information architecture
+
+Link: https://shoghibagul.com/work/eden
+
+## More work
+
+04
+
+### A Design System for Music Rights
+
+A design system and operational UI for music rights management.
+
+B2B SaaS · 2024
+
+Link: https://shoghibagul.com/work/rights-management
+
+### Novus Insights
+
+AI-assisted research workflows, from survey creation to insight.
+
+AI SaaS · 2023–24
+
+Link: https://shoghibagul.com/work/novus
+
+### A Marketplace for Caregivers
+
+Research-led journey design for a UK healthcare marketplace.
+
+Healthcare · 2022–23
+
+Link: https://shoghibagul.com/work/caregiver-marketplace
+
+### A Consumer Layer for a Sports Ecosystem
+
+Consumer product design inside a multi-sided sports ecosystem.
+
+In progress · 2026
+
+Link: https://shoghibagul.com/work/sports-ecosystem
 
 ## Experience
 
@@ -53,16 +123,6 @@ Link: https://www.tcules.com/blog/building-trust-and-transparency-in-ai-first-us
 LinkedIn · Jul 2026 · After Figma Config 2026
 
 Link: https://www.linkedin.com/posts/shoghi07_figma-productdesign-designsystems-activity-7483116908586622976-_BoC
-
-## I lead the work, then I sit in it.
-
-At Tcules I run design as both a practice and a delivery function: pairing with founders, scoping ambiguous briefs, and staying on the file through handoff. Some weeks that means an agent workflow or a hiring screener trained on past recruitment cycles. Some weeks it means raising the floor for a team.
-
-The through-line is the same: turn messy operational reality into an interface people can trust. I care about systems that survive the second product, not just the first mock.
-
-Product thinking · Complex workflows · Design systems · AI interaction · UX research · Presales
-
-[More about me](https://shoghibagul.com/about)
 
 ---
 

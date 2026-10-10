@@ -4,7 +4,7 @@
 
 Product design leadership for Novus Insights, an AI-powered market research platform.
 
-05 · Selected work
+05 · More work
 
 Put generative AI where survey creation actually stalls, so a brand manager can start from intent, not from a blank questionnaire.
 

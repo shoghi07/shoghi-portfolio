@@ -12,6 +12,12 @@ Product designer and Design Lead at Tcules, Ahmedabad (M.Des, NID Ahmedabad). Ev
 ## Case studies
 
 - [Delicut — From Meal Subscription to Ongoing Product Experience | Shoghi Bagul](https://shoghibagul.com/work/delicut): A product design case study on shaping Delicut’s acquisition, meal-plan subscription, checkout and mobile experience through UX research, product strategy and interaction design. Text: https://shoghibagul.com/work/delicut.md
+- [A Consumer Layer for a Sports Ecosystem · Shoghi Bagul](https://shoghibagul.com/work/sports-ecosystem): Consumer-facing product design inside a multi-sided sports ecosystem. Designed by Shoghi Bagul. Text: https://shoghibagul.com/work/sports-ecosystem.md
+- [ConnectX · Shoghi Bagul](https://shoghibagul.com/work/connectx): AI-native workspace for building energy at ConnectX. Conversation sets intent; the dashboard stays the work. Text: https://shoghibagul.com/work/connectx.md
+- [A Design System for Music Rights · Shoghi Bagul](https://shoghibagul.com/work/rights-management): Design system and complex workflow design for a music rights management platform. Text: https://shoghibagul.com/work/rights-management.md
+- [Novus Insights · Shoghi Bagul](https://shoghibagul.com/work/novus): Product design leadership for Novus Insights, an AI-powered market research platform. Text: https://shoghibagul.com/work/novus.md
+- [Eden AI · Shoghi Bagul](https://shoghibagul.com/work/eden): Collapsing three fragmented entry points into one intelligent search for Eden AI, a developer AI platform. Text: https://shoghibagul.com/work/eden.md
+- [A Marketplace for Caregivers · Shoghi Bagul](https://shoghibagul.com/work/caregiver-marketplace): UX analysis and journey design for a UK caregiver hiring marketplace. Text: https://shoghibagul.com/work/caregiver-marketplace.md
 
 ## Contact
 
