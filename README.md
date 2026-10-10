@@ -16,6 +16,7 @@ css/styles.css          All styling (design tokens live in :root)
 js/site.js              Footer clock, copyright year, scroll reveals
 assets/                 Resume PDF, favicon, Open Graph share images
 tools/                  One-off scripts (see below)
+assets-src/             Full-size image originals, git-ignored (see Images)
 *.md, work/*.md         Markdown versions of each page, for AI tools (generated)
 read/                   Reader pages: the same text as a calm article (generated)
 css/reader.css          Styles for the Reader pages
@@ -74,6 +75,31 @@ The anonymised three keep the client name out of the slug, `<title>`, `<h1>`,
 every meta tag, the OG card filename, and body copy. Note that the résumé
 names all of them — that is intentional: the résumé is sent to a known
 recipient, the site is public.
+
+## Images
+
+Originals never go in the repo. Drop them, full size, into
+`assets-src/<project>/` (git-ignored), named the way the page will use them,
+then run:
+
+```bash
+python3 tools/optimize-images.py delicut
+```
+
+Each original becomes two WebP files in `assets/work/<project>/`
+(`<name>-<width>.webp`), and the script prints an `<img>` tag with `srcset`,
+`width` and `height` to paste into the page; set `sizes` to how wide the image
+shows. Keep `loading="lazy"` on everything below the first screen. The name's
+prefix picks the widths:
+
+| Prefix | For | Widths | Capture at |
+| --- | --- | --- | --- |
+| `full-` | Full-page screenshots: the pinned browser frame (`V2_FULL_PAGE`, `V2_MOBILE_FULL_PAGE`) and the compare (`OLD_FULL_PAGE`, `V2_FULL_PAGE_COMPARE`) | 1200 / 2400 | Desktop 1440px wide; mobile at the phone's width at 3x. The compare pair at the same width. |
+| `app-` | Phone screens (`APP_*`) | 400 / 800 | The phone's native resolution |
+| anything else | Photos and crops: landing and subscription iterations, flows, checkout steps, concepts, `LANDING_MENU_SECTION` | 640 / 1280 | At least 1280px wide |
+
+PNG or JPG originals both work. Re-running skips anything already converted.
+It needs macOS (`sips`) and downloads `sharp-cli` through `npx` on first use.
 
 ## Text versions for AI tools (`llms.txt`)
 

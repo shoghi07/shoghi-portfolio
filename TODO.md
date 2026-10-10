@@ -8,6 +8,7 @@
 - **Fill in the Delicut case study** (`work/delicut.html`) — rebuilt on the "Option D2" layout. Still to do:
   - Real assets for every `.ph` placeholder (each has a `data-asset` id), including a crop of the redesigned landing page's meals and weekly-menu section beside the original (`LANDING_MENU_SECTION`, under "So the meals came first"), one tall V2 landing screenshot for the pinned browser frame plus one tall mobile screenshot for its Mobile view, and the original/V2 pair for the compare (full-length or cropped to the top sections; same width so they line up).
   - Bracketed copy: `[ITERATION NAME]` in the subscription-flow strip, `[SCREEN NAME]` for the three v0.5 app screens, `[WHAT THE PROTOTYPE TESTED OR SET UP]` for v0.5.
+  - Add screenshots through `assets-src/delicut/` + `tools/optimize-images.py` (see README "Images" for names and capture sizes).
   - Photos from Delicut's social media are in `assets/work/delicut/` (six photos in the full-bleed strip after the hero (arrives, the week in the fridge, breakfast, the sauce pour, a smoothie, shared), which replaced the planned Dubai skyline; the boxes in "Adapt"; four customer photos in the closing band), credited "Photos: Delicut". Get an explicit OK from Delicut to use them.
   - Check the pinned-browser notes and the "section order" figure against the real V2 screenshot (currently based on the live delicut.ae page order).
   - Confirm the customer figure: delicut.ae shows both "Trusted by 15,000+ customers" (hero) and "125K+ happy customers" (footer); the case study uses 125K+.
