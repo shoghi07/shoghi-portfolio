@@ -61,6 +61,75 @@
 		readTime.textContent = `${Math.max(1, Math.round(seconds / 60))} min read`;
 	}
 
+	/* --- full-page viewer: each version in the evolution strip opens full
+	   length in a dialog, with a note on what changed. Previous / next (and
+	   the arrow keys) step through the versions in order. Images only load
+	   when shown; without JS (or <dialog>) each tile is a plain link to the
+	   image. --- */
+	const viewer = document.querySelector("[data-viewer]");
+	const versions = [...document.querySelectorAll("[data-full-src]")];
+	if (viewer && versions.length && typeof viewer.showModal === "function") {
+		const img = viewer.querySelector("[data-viewer-img]");
+		const title = viewer.querySelector("[data-viewer-title]");
+		const count = viewer.querySelector("[data-viewer-count]");
+		const note = viewer.querySelector("[data-viewer-note]");
+		const scroller = viewer.querySelector(".cs-viewer-scroll");
+		const [prev, next] = viewer.querySelectorAll("[data-viewer-step]");
+		let at = 0;
+
+		const show = (i) => {
+			at = i;
+			const d = versions[i].dataset;
+			const [w, h] = d.fullSize.split("x");
+			img.removeAttribute("src");
+			img.width = w;
+			img.height = h;
+			img.sizes = "min(1240px, 100vw)";
+			img.srcset = d.fullSrcset;
+			img.src = d.fullSrc;
+			img.alt = d.fullAlt;
+			title.textContent = d.fullTitle;
+			count.textContent = `${i + 1} / ${versions.length}`;
+			note.textContent = d.fullNote || "";
+			prev.disabled = i === 0;
+			next.disabled = i === versions.length - 1;
+			// each version opens at the top, so they compare at the same spot
+			scroller.scrollTop = 0;
+		};
+
+		versions.forEach((link, i) => {
+			link.addEventListener("click", (event) => {
+				event.preventDefault();
+				show(i);
+				root.classList.add("has-viewer");
+				viewer.showModal();
+				scroller.focus({ preventScroll: true });
+			});
+		});
+		// a button that just became disabled can't keep focus; hand it to the page
+		const step = (by, btn) => {
+			const i = at + by;
+			if (i < 0 || i >= versions.length) return;
+			show(i);
+			if (btn.disabled) scroller.focus({ preventScroll: true });
+		};
+		prev.addEventListener("click", () => step(-1, prev));
+		next.addEventListener("click", () => step(1, next));
+		viewer.addEventListener("keydown", (event) => {
+			if (event.key === "ArrowLeft") prev.click();
+			if (event.key === "ArrowRight") next.click();
+		});
+		viewer.querySelector("[data-viewer-close]").addEventListener("click", () => viewer.close());
+		// a click on the backdrop lands on the dialog itself
+		viewer.addEventListener("click", (event) => {
+			if (event.target === viewer) viewer.close();
+		});
+		viewer.addEventListener("close", () => {
+			root.classList.remove("has-viewer");
+			versions[at].focus({ preventScroll: true });
+		});
+	}
+
 	/* --- before / after: drag the handle (or use the arrow keys) --- */
 	document.querySelectorAll("[data-compare]").forEach((fig) => {
 		const box = fig.querySelector(".cs-compare");

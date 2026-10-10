@@ -94,7 +94,7 @@ prefix picks the widths:
 
 | Prefix | For | Widths | Capture at |
 | --- | --- | --- | --- |
-| `full-` | Full-page screenshots: the pinned browser frame (`V2_FULL_PAGE`, `V2_MOBILE_FULL_PAGE`) and the compare (`OLD_FULL_PAGE`, `V2_FULL_PAGE_COMPARE`) | 1200 / 2400 | Desktop 1440px wide; mobile at the phone's width at 3x. The compare pair at the same width. |
+| `full-` | Full-page screenshots: the pinned browser frame (`V1_FULL_PAGE`, `V1_MOBILE_FULL_PAGE`), the compare (`OLD_FULL_PAGE`, `V1_FULL_PAGE_COMPARE`) and the versions in the evolution viewer | 1200 / 2400 | Desktop 1440px wide; mobile at the phone's width at 3x. The compare pair at the same width. |
 | `app-` | Phone screens (`APP_*`) | 400 / 800 | The phone's native resolution |
 | anything else | Photos and crops: landing and subscription iterations, flows, checkout steps, concepts, `LANDING_MENU_SECTION` | 640 / 1280 | At least 1280px wide |
 

@@ -66,7 +66,7 @@ Shipped · live 1+ yr
 
 - **Evidence:** People wanted real meals, fit with their goals, value against cooking or ordering in, and trust. Stakeholders had assumed price wouldn’t matter much; research said it did.
 - **Decision:** I restructured the page around the questions people asked, and **pushed hardest for real meals and the weekly menu near the top.**
-- **Status:** **Shipped.** Three iterations, V1 live, then V2. Live 1+ year; roughly 80–90% of the design remains (my estimate). Conversion wasn’t measured.
+- **Status:** **Shipped.** Six iterations, V1 live, then V1.1. Live 1+ year; roughly 80–90% of the design remains (my estimate). Conversion wasn’t measured.
 
 So the meals came first.
 
@@ -80,21 +80,21 @@ The original page had a meal-plan proposition, benefits, a menu preview, pricing
 
 Simplified section order, original → redesign. Illustrative.
 
-1. **Hero** Plans and the offer in one line.
-2. **1 · Value + food** Framed against cooking or ordering in, then real meals and the menu.
-3. **2 · Proof** Business proof answers “can I trust it?”
-4. **3 · Real-life fit** Flexibility and nutrition, in everyday terms.
-5. **4 · Your goal** People recognize themselves before they choose a plan.
-6. **5 · Stories + support** Customer stories and FAQ settle what’s left.
+1. **Hero** The offer up front, with delivery and rating proof.
+2. **1 · The claim + food** A plain claim (80% fail their fitness goals; Delicut brings it to 15%), then real dishes with their macros.
+3. **2 · Real-life fit** Family-friendly, zero planning, free UAE-wide delivery, personalized.
+4. **3 · Your goal** People recognize themselves before they choose a plan.
+5. **4 · Stories + support** Customer stories, FAQ and a free 10-minute call settle what’s left.
 
-How the page evolved, at a glance Three iterations to V1, then a refinement into V2.
+How the page evolved, at a glance Six iterations to V1, then a refinement into V1.1. Select a version to see the whole page.
 
-1. **ORIGINAL** Product → features → offer
-2. **ITERATION 1** The problem, reframed
-3. **ITERATION 2** Food first, goals visible
-4. **ITERATION 3** A confidence sequence
-5. **V1 · FIRST LIVE** The decision sequence ships
-6. **V2 · LIVE TODAY** Refined, live for 1+ year
+1. [**ORIGINAL** Product → features → offer](https://shoghibagul.com/assets/work/delicut/full-landing-original-1200.webp)
+2. [**ITERATION 1** Proof and menu first](https://shoghibagul.com/assets/work/delicut/full-landing-iteration-1-1200.webp)
+3. [**ITERATION 2** The problem, reframed](https://shoghibagul.com/assets/work/delicut/full-landing-iteration-2-1200.webp)
+4. [**ITERATION 3** Photography-led, built for real life](https://shoghibagul.com/assets/work/delicut/full-landing-iteration-3-1200.webp)
+5. [**ITERATION 5** A brand-led hero, food first](https://shoghibagul.com/assets/work/delicut/full-landing-iteration-5-1200.webp)
+6. [**V1 · FIRST LIVE** The decision sequence ships](https://shoghibagul.com/assets/work/delicut/full-landing-v1-1200.webp)
+7. [**V1.1 · LIVE TODAY** Refined, live for 1+ year](https://shoghibagul.com/assets/work/delicut/full-landing-v1-1-1200.webp)
 
 Build · Plan builder
 
