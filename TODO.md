@@ -2,7 +2,7 @@
 
 - **Homepage follow-ups** — the homepage now runs hero → practice → Selected work (Delicut, ConnectX, Eden AI as featured cards) → More work → Experience → Writing. Still to do:
   - Real cover images for the three featured cards (they show the graphic covers for now).
-  - Confirm the sports-ecosystem case study can be shown while the product is in progress; if not, drop its "More work" row and pager link.
+  - The sports-ecosystem case study is held back while the product is in progress: off the homepage, the Previous/Next chain, `llms.txt` and the sitemap (the page itself still exists). Add it back as "07 · More work" when it can be shown.
   - Retire the older anonymised `work/meal-subscription.html` (no longer linked from anywhere except its own pager).
   - The old "Also" section (business-travel planner and other unlinked items) stays off the homepage.
 - **Fill in the Delicut case study** (`work/delicut.html`) — rebuilt on the "Option D2" layout. Still to do:

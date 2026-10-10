@@ -58,7 +58,7 @@ Link: https://shoghibagul.com/work/eden
 
 ## More work
 
-04
+03
 
 ### A Design System for Music Rights
 
@@ -83,14 +83,6 @@ Research-led journey design for a UK healthcare marketplace.
 Healthcare · 2022–23
 
 Link: https://shoghibagul.com/work/caregiver-marketplace
-
-### A Consumer Layer for a Sports Ecosystem
-
-Consumer product design inside a multi-sided sports ecosystem.
-
-In progress · 2026
-
-Link: https://shoghibagul.com/work/sports-ecosystem
 
 ## Experience
 

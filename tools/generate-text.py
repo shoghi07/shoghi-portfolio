@@ -62,7 +62,6 @@ INDEXED_WORK = {
     "work/rights-management.html",
     "work/novus.html",
     "work/caregiver-marketplace.html",
-    "work/sports-ecosystem.html",
 }
 
 # Clients that can be named (see README "Client naming"), for JSON-LD "about".

@@ -4,7 +4,7 @@
 
 Consumer-facing product design inside a multi-sided sports ecosystem. Designed by Shoghi Bagul.
 
-07 · More work
+More work
 
 Design the consumer face of a sports ecosystem without pretending the other sides of the marketplace aren’t in the room.
 
