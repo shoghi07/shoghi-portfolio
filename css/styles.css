@@ -15,6 +15,9 @@
 	--serif: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
 	--sans: "Figtree", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	/* the "leaves the site" mark: a thin drawn arrow, painted in currentColor
+	   through a mask, so it matches the text instead of a fallback-font glyph */
+	--icon-out: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23000' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5l5-5M4.75 3.5H8.5v3.75'/%3E%3C/svg%3E");
 }
 
 *,
@@ -382,7 +385,7 @@ p {
 	text-decoration: none;
 }
 
-/* right arrow: this stays on the site, unlike the ↗ on a.more-item / a.job */
+/* right arrow: this stays on the site, unlike the out-arrow on a.more-item / a.job */
 .section-more::after {
 	content: "\2192" / "";
 	transition: transform 0.25s var(--ease);
@@ -768,8 +771,24 @@ p {
 	border-left: 1px solid var(--rule);
 }
 
+/* every external-link mark on the site uses the same drawn arrow */
+a.more-item::after,
+a.job::after,
+.writing-row strong::after,
+.cs-ext::after,
+.ext::after {
+	content: "" / "";
+	display: inline-block;
+	width: 0.7em;
+	height: 0.7em;
+	vertical-align: 0.02em;
+	background-color: currentColor;
+	-webkit-mask: var(--icon-out) center / contain no-repeat;
+	mask: var(--icon-out) center / contain no-repeat;
+}
+
 a.more-item::after {
-	content: "\2197" / "";
+	flex: none;
 	align-self: center;
 	color: var(--ink-3);
 	font-size: 0.9rem;
@@ -1088,10 +1107,9 @@ a.job {
 /* absolute rather than a third grid column, so it survives the 860px
    breakpoint where .job collapses to a single column */
 a.job::after {
-	content: "\2197" / "";
 	position: absolute;
 	right: 0;
-	top: 1.3rem;
+	top: 1.6rem;
 	color: var(--ink-3);
 	font-size: 0.9rem;
 	transition: color 0.25s var(--ease), transform 0.25s var(--ease);
@@ -1128,6 +1146,81 @@ a.job:focus-visible::after {
 	margin-top: 0.35rem;
 	color: var(--ink-2);
 	font-size: 0.95rem;
+}
+
+/* ---------- About: writing, grouped into three themes ---------- */
+
+.writing-themes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.writing-theme-n {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: var(--accent-text);
+	font-family: var(--mono);
+	font-size: 0.7rem;
+	letter-spacing: 0.1em;
+}
+
+.writing-theme h3 {
+	font-family: var(--serif);
+	font-weight: 400;
+	font-size: 1.7rem;
+	line-height: 1.05;
+	letter-spacing: -0.012em;
+}
+
+.writing-theme > p {
+	margin: 0.4rem 0 0.9rem;
+	color: var(--ink-2);
+	font-size: 0.9rem;
+}
+
+.writing-row {
+	display: block;
+	padding: 0.85rem 0;
+	border-top: 1px solid var(--rule);
+	text-decoration: none;
+}
+
+.writing-row:hover {
+	text-decoration: none;
+}
+
+.writing-row strong {
+	display: block;
+	font-weight: 500;
+	font-size: 0.98rem;
+	line-height: 1.35;
+	letter-spacing: -0.015em;
+	transition: color 0.25s var(--ease);
+}
+
+.writing-row strong::after {
+	margin-left: 0.3em;
+	color: var(--ink-3);
+	transition: color 0.25s var(--ease);
+}
+
+.writing-row:hover strong,
+.writing-row:focus-visible strong,
+.writing-row:hover strong::after,
+.writing-row:focus-visible strong::after {
+	color: var(--accent-text);
+}
+
+.writing-row span {
+	color: var(--ink-3);
+	font-size: 0.8rem;
+}
+
+@media (max-width: 860px) {
+	.writing-themes {
+		grid-template-columns: 1fr;
+	}
 }
 
 .js [data-reveal] {
@@ -1748,7 +1841,7 @@ a.job:focus-visible::after {
 	gap: 12px;
 }
 
-/* an inline link that leaves the site: always underlined, with the ↗
+/* an inline link that leaves the site: always underlined, with the arrow
    the site uses for external links */
 .cs-ext {
 	color: var(--ink);
@@ -1756,11 +1849,15 @@ a.job:focus-visible::after {
 }
 
 .cs-ext::after {
-	content: "\2197" / "";
-	margin-left: 2px;
+	margin-left: 3px;
 	color: var(--ink-3);
 	font-size: 0.85em;
 	transition: color 0.25s var(--ease);
+}
+
+.ext::after {
+	margin-left: 0.35em;
+	font-size: 0.85em;
 }
 
 .cs-ext:hover {

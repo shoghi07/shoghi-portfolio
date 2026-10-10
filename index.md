@@ -106,7 +106,7 @@ Link: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7341374671012909
 
 **Building trust in AI-first interfaces**
 
-Tcules · May 2025 · Open kitchens, not black boxes
+Tcules · May 2025 · Show the work, leave the decision with the person
 
 Link: https://www.tcules.com/blog/building-trust-and-transparency-in-ai-first-user-interfaces
 

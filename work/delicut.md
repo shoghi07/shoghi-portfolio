@@ -227,7 +227,7 @@ I joined to help with research and grew into leading the product experience. I l
 
 What I took from Delicut: a purchase flow is part of a larger confidence-building journey, a shorter process isn’t better if it makes the offer harder to judge, and a subscription needs designing for the weeks after checkout.
 
-[See it live at delicut.ae ↗](https://delicut.ae/)
+[See it live at delicut.ae](https://delicut.ae/)
 
 ---
 

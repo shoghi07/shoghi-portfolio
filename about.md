@@ -56,77 +56,43 @@ UX/UI for the Bahá’í House of Worship website, New Delhi. Interactive fleet 
 
 ## Writing
 
-Jul 2026
+09 pieces
 
-### The handoff is being redefined
+01
 
-LinkedIn · After Figma Config 2026 and the Ahmedabad Watch Party. The bigger shift is the workflow, not the title.
+### AI and trust
 
-Link: https://www.linkedin.com/posts/shoghi07_figma-productdesign-designsystems-activity-7483116908586622976-_BoC
+When the product starts deciding, what does the person still control?
 
-May 2026
+[**Who’s really in control, the user or the algorithm?** LinkedIn · Jun 2025](https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7341374671012909056)
 
-### AI isn’t killing design
+[**Building Trust and Transparency in AI-first User Interfaces** Tcules · May 2025](https://www.tcules.com/blog/building-trust-and-transparency-in-ai-first-user-interfaces)
 
-LinkedIn · As AI absorbs the execution layer, the centre of value shifts back to thinking.
+[**AI isn’t killing design** LinkedIn · May 2026](https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460314919981473792)
 
-Link: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460314919981473792
+02
 
-May 2026
+### How design work is changing
 
-### Position intelligence, condition intelligence
+Designers closer to implementation, clients and AI in the room.
 
-LinkedIn · Knowing where to sit is a solved problem. Knowing whether the seat works when you arrive isn’t.
+[**The handoff is being redefined** LinkedIn · Jul 2026](https://www.linkedin.com/posts/shoghi07_figma-productdesign-designsystems-activity-7483116908586622976-_BoC)
 
-Link: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7456635664877383680
+[**When designers and clients build together, with AI at the table** LinkedIn · Apr 2025](https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7322973186940125184)
 
-Jun 2025
+[**Vibe coding** LinkedIn · Apr 2025](https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7312802508526051328)
 
-### Who’s really in control, the user or the algorithm?
+03
 
-LinkedIn · An Omny AI flaw at Tcules: accurate suggestions, applied without asking. A trust problem, not a usability one.
+### Reading other products
 
-Link: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7341374671012909056
+Looking closely at what others built, before reaching for a fix.
 
-May 2025
+[**CRED’s CIBIL feature: from what is to what if** LinkedIn · Feb 2025](https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7300825629313187840)
 
-### Building Trust and Transparency in AI-first User Interfaces
+[**Position intelligence, condition intelligence** LinkedIn · May 2026](https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7456635664877383680)
 
-Tcules · Open kitchens, not black boxes. And the Omny AI pattern of suggest, don’t decide.
-
-Link: https://www.tcules.com/blog/building-trust-and-transparency-in-ai-first-user-interfaces
-
-Apr 2025
-
-### When designers and clients build together, with AI at the table
-
-LinkedIn · A 0→1 engagement where the client was using AI alongside me, in real time.
-
-Link: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7322973186940125184
-
-Apr 2025
-
-### Vibe coding
-
-LinkedIn · Lovable, Bolt, Cursor, Replit. The AI still won’t solve structure or edge cases for you.
-
-Link: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7312802508526051328
-
-Feb 2025
-
-### CRED’s CIBIL feature: from what is to what if
-
-LinkedIn · Designing for foresight instead of history, on a number most people can’t explain.
-
-Link: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7300825629313187840
-
-Jun 2024
-
-### Is problem-solving always the best design approach?
-
-LinkedIn · Appreciating a product before defaulting to fix-it mode.
-
-Link: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7206941601300942849
+[**Is problem-solving always the best design approach?** LinkedIn · Jun 2024](https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7206941601300942849)
 
 ## Education
 
